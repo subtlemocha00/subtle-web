@@ -1,15 +1,22 @@
+:root {
+	font-size: 20px;
+}
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
+
 * {
 	margin: 0;
 }
+
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
+
 img,
 picture,
 video,
@@ -18,12 +25,14 @@ svg {
 	display: block;
 	max-width: 100%;
 }
+
 input,
 button,
 textarea,
 select {
 	font: inherit;
 }
+
 p,
 h1,
 h2,
@@ -33,13 +42,10 @@ h5,
 h6 {
 	overflow-wrap: break-word;
 }
+
 #root,
 #__next {
 	isolation: isolate;
-}
-
-:root {
-	font-size: 20px;
 }
 
 main {
@@ -49,10 +55,11 @@ main {
 
 #homeLogo {
 	filter: drop-shadow(2px 3px 3px #000);
-	height: 25%;
+	height: 2rem;
 }
 
 #firstMain {
+	height: 100vh;
 	background-image: linear-gradient(
 		145deg,
 		rgb(93, 255, 57),
@@ -62,10 +69,12 @@ main {
 }
 
 #landing {
+	height: 100vh;
 	filter: drop-shadow(0px -8px rgb(0, 102, 210));
 }
 
 .bg-cut {
-	height: 100vh;
+	position: absolute;
+	bottom: 0;
 	transform: scaleX(1.2);
 }

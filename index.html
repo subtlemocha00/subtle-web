@@ -6,54 +6,81 @@
 		<title>Subtle Web Development</title>
 		<link
 			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
 		/>
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-md navbar-light bg-light">
-			<a class="navbar-brand" href="#"
-				><img height="40px" src="./assets/icons/subtlelogo.png"
-			/></a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
+		<header class="fixed-top row">
+			<!-- Navbar -->
+			<nav
+				class="navbar navbar-expand-lg bg-transparent px-3 border border-dark"
 			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="#"
-							>Home <span class="sr-only">(current)</span></a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-					</li>
-					<li class="nav-item">
-						<a
-							class="nav-link disabled"
-							href="#"
-							tabindex="-1"
-							aria-disabled="true"
-							>Disabled</a
-						>
-					</li>
-				</ul>
-			</div>
-		</nav>
+				<!-- <a class="navbar-brand p-2" href="#"
+					> -->
+				<img id="homeLogo" src="./assets/icons/subtle-logo-1.png" />
+				<!-- </a> -->
+				<span class="btn nav-item">Subtle Web Design</span>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link text-white" href="#"
+								>Home <span class="visually-hidden">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 		<!-- Theme Switch -->
+
+		<!-- Top Section -->
+		<main id="firstMain">
+			<section id="landing">
+				<img class="bg-cut" src="./assets/svg/landing-light.svg" alt />
+			</section>
+			<!-- <section id="landing">
+				<img class="bgCut" src="./assets/svg/landing-light.svg" alt />
+			</section>
+			<section id="landing">
+				<img class="bgCut" src="./assets/svg/landing-light.svg" alt />
+			</section> -->
+		</main>
+		<div>s</div>
 	</body>
 </html>

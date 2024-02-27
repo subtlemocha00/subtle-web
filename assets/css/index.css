@@ -1,5 +1,5 @@
 :root {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 *,
@@ -50,12 +50,12 @@ h6 {
 
 main {
 	height: 100vh;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 #homeLogo {
 	filter: drop-shadow(2px 3px 3px #000);
-	height: 2rem;
+	height: 3.5rem;
 }
 
 #firstMain {
@@ -77,4 +77,19 @@ main {
 	position: absolute;
 	bottom: 0;
 	transform: scaleX(1.2);
+}
+
+/* bootstrap and font awesome changes */
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+@media (min-width: 768px) {
+	:root {
+		font-size: 24px;
+	}
 }

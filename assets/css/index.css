@@ -98,6 +98,11 @@ main {
 	font-size: 12px;
 }
 
+/* remove once content is added */
+#constructionNotice {
+	filter: drop-shadow(none);
+}
+
 @media (min-width: 768px) {
 	:root {
 		font-size: 24px;

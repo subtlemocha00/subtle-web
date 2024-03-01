@@ -50,17 +50,19 @@ h6 {
 
 main {
 	height: 100vh;
-	overflow: hidden;
+	min-height: 100svh;
 }
 
 #homeLogo {
 	filter: drop-shadow(2px 3px 3px #000);
 	height: 3.5rem;
 }
+
 .title-text {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 }
+
 #firstMain {
 	height: 100vh;
 	background-image: linear-gradient(
@@ -73,16 +75,21 @@ main {
 
 #landing {
 	position: relative;
+	overflow: hidden;
 	top: 50px;
 	transform: scaleY(0.9);
-	height: 100vh;
-	filter: drop-shadow(0px -8px rgb(0, 102, 210));
+	/* filter: drop-shadow(0px -8px rgb(0, 102, 210)); */
+	min-height: 100svh;
 }
 
 .bg-cut {
 	position: absolute;
 	bottom: 0;
 	transform: scaleX(1.2);
+}
+
+#limited {
+	font-size: 12px;
 }
 
 /* bootstrap and font awesome changes */
@@ -94,13 +101,9 @@ main {
 	box-shadow: none;
 }
 
-#limited {
-	font-size: 12px;
-}
-
 /* remove once content is added */
 #constructionNotice {
-	filter: drop-shadow(none);
+	/* filter: drop-shadow(none); */
 }
 
 @media (min-width: 768px) {

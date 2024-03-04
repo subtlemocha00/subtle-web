@@ -48,6 +48,23 @@ h6 {
 	isolation: isolate;
 }
 
+/* MAIN CSS */
+
+@font-face {
+	font-family: "Kanit";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+}
+
+/* Define Kanit Bold */
+@font-face {
+	font-family: "Kanit";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/Kanit/Kanit-Bold.ttf") format("truetype");
+}
+
 main {
 	/* height: 100vh; */
 	/* min-height: 100svh; */
@@ -58,13 +75,17 @@ main {
 	height: 3.5rem;
 }
 
-.title-text {
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
+.titleText {
+	color: rgb(255, 229, 176);
+	font-family: "Kanit";
+	font-weight: 700;
+	text-shadow: 0px 10px 5px black;
 }
 
 #masthead {
-	background-image: url("../images/guitar_a.png");
+	background-image: url("../images/coffee_pc_a_lg.png");
+	/* background-image: url("../images/desktop_scene_green.png"); */
+	/* background-image: url("../images/desktop_scene.png"); */
 	background-size: cover;
 	background-position: center;
 }

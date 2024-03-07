@@ -70,11 +70,6 @@ main {
 	/* min-height: 100svh; */
 }
 
-#homeLogo {
-	filter: drop-shadow(5px 5px 5px #000);
-	height: 3.5rem;
-}
-
 .titleText {
 	color: rgb(255, 229, 176);
 	font-family: "Kanit";
@@ -107,13 +102,48 @@ main {
 	box-shadow: none;
 }
 
-/* remove once content is added */
-#constructionNotice {
-	/* filter: drop-shadow(none); */
+.navParentShrink {
+	padding-top: 0em;
+}
+
+.navShrink {
+	margin-top: 0em;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar-brand img {
+	height: 3.5em;
+	filter: drop-shadow(5px 5px 5px #000);
+	/* animation: height 0.75s ease-in reverse; */
+}
+.navbar-brand-shrink {
+	filter: drop-shadow(5px 5px 5px #000);
+	animation: height 0.75s ease-in forwards;
+}
+.navbar-brand-grow {
+	filter: drop-shadow(5px 5px 5px #000);
+	animation: height 0.75s ease-in reverse;
 }
 
 @media (min-width: 768px) {
 	:root {
 		font-size: 24px;
+	}
+}
+
+@keyframes height {
+	from {
+		height: 3.5em;
+	}
+	to {
+		height: 2.5em;
+	}
+}
+
+@keyframes heightGrow {
+	from {
+		height: 2.5em;
+	}
+	to {
+		height: 3.5em;
 	}
 }

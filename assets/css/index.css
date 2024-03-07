@@ -1,5 +1,16 @@
 :root {
+	/* font */
 	font-size: 18px;
+	--text-outline: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000;
+	/* colors */
+	--color-main: #c1ab66;
+	--color-accent-1: #42bfae;
+	/* --color-accent-2: #008979; */
+	--color-accent-2: #dd763d;
+	--color-accent-3: #b2ab99;
+	--color-accent-4: #4c4637;
+	/* shadows */
+	--drop-shadow: drop-shadow(0 5px 5px #000);
 }
 
 *,
@@ -65,38 +76,41 @@ h6 {
 	src: url("../fonts/Kanit/Kanit-Bold.ttf") format("truetype");
 }
 
-main {
-	/* height: 100vh; */
-	/* min-height: 100svh; */
-}
-
 .titleText {
-	color: rgb(255, 229, 176);
+	color: var(--color-main);
+	font-size: 2.5em;
 	font-family: "Kanit";
 	font-weight: 700;
-	text-shadow: 0px 10px 5px black;
+	text-shadow: var(--text-outline);
+	/* filter: var(--drop-shadow); */
 }
 
 .sectionTitle {
-	/* color: black; */
 	color: rgb(41, 41, 41);
 	font-family: "Kanit";
 	font-weight: 400;
-	/* text-shadow: 0px 10px 5px black; */
 }
 
+/* font colors */
 .copyText {
 	color: rgb(112, 112, 112);
 }
 
 #quoteContainer {
-	background-color: rgb(255, 229, 176);
+	background-color: var(--color-main);
+}
+
+/* background colors */
+.bg-accent-1 {
+	background-color: var(--color-accent-1);
+}
+
+.bg-accent-2 {
+	background-color: var(--color-accent-2);
 }
 
 #landing {
-	background-image: url("../images/coffee_pc_a_lg.png");
-	/* background-image: url("../images/desktop_scene_green.png"); */
-	/* background-image: url("../images/desktop_scene.png"); */
+	background-image: url("../images/coffee_pc_a_lg.webp");
 	background-size: cover;
 	background-position: center;
 	min-height: 110svh;
@@ -125,23 +139,32 @@ main {
 }
 .navbar-brand img {
 	height: 3.5em;
-	filter: drop-shadow(5px 5px 5px #000);
-	/* animation: height 0.75s ease-in reverse; */
+	filter: var(--drop-shadow);
 }
 .navbar-brand-shrink {
-	filter: drop-shadow(5px 5px 5px #000);
 	animation: height 0.75s ease-in forwards;
 }
 .navbar-brand-grow {
-	filter: drop-shadow(5px 5px 5px #000);
 	animation: height 0.75s ease-in reverse;
 }
+
+#scrollUpButton {
+	background-color: var(--color-main);
+	filter: var(--drop-shadow);
+	position: fixed;
+	right: 5%;
+	bottom: 3%;
+}
+
+/* media queries */
 
 @media (min-width: 768px) {
 	:root {
 		font-size: 24px;
 	}
 }
+
+/* animations */
 
 @keyframes height {
 	from {

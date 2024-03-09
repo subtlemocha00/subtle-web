@@ -3,14 +3,21 @@
 	font-size: 18px;
 	--text-outline: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000;
 	/* colors */
-	--color-main: #c1ab66;
-	--color-accent-1: #42bfae;
-	/* --color-accent-2: #008979; */
-	--color-accent-2: #dd763d;
+	/* --color-text: #1d1f20; */
+	--color-text: #4b382a;
+	/* --color-main: #ddcba4; */
+	--color-accent-2: #c97e36;
+	/* --color-main: #c97e36; */
+	--color-main: #606eaa;
 	--color-accent-3: #b2ab99;
-	--color-accent-4: #4c4637;
+	--color-accent-4: #4b382a;
+
+	--color-accent-b: #98a9d1;
+	--color-accent-c: #f4f4f6;
+	--color-accent-d: #323a45;
+	--color-accent-g: #c97e36;
 	/* shadows */
-	--drop-shadow: drop-shadow(0 5px 5px #000);
+	--drop-shadow: drop-shadow(0 5px 5px var(--color-text));
 }
 
 *,
@@ -26,6 +33,7 @@
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
+	color: var(--color-text);
 }
 
 img,
@@ -91,13 +99,16 @@ h6 {
 	font-weight: 400;
 }
 
-/* font colors */
+/* colors */
 .copyText {
 	color: rgb(112, 112, 112);
 }
 
-#quoteContainer {
+.bg-main {
 	background-color: var(--color-main);
+}
+.color-accent-g {
+	color: var(--color-accent-g);
 }
 
 /* background colors */
@@ -105,8 +116,23 @@ h6 {
 	background-color: var(--color-accent-1);
 }
 
-.bg-accent-2 {
-	background-color: var(--color-accent-2);
+.bg-accent-d {
+	background-color: var(--color-accent-d);
+}
+.bg-accent-2-grad {
+	background: linear-gradient(
+		180deg,
+		var(--color-main),
+		20%,
+		var(--color-accent-2)
+	);
+}
+.bg-accent-4 {
+	background-color: var(--color-accent-4);
+}
+
+.boxShadow {
+	filter: var(--drop-shadow);
 }
 
 #landing {
@@ -135,7 +161,7 @@ h6 {
 
 .navShrink {
 	margin-top: 0em;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 .navbar-brand img {
 	height: 3.5em;
@@ -148,8 +174,21 @@ h6 {
 	animation: height 0.75s ease-in reverse;
 }
 
-#scrollUpButton {
+.icon-circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
 	background-color: var(--color-main);
+	color: var(--color-accent-c);
+	border-radius: 50%;
+	width: 1.6em;
+	height: 1.6em;
+	line-height: 1.6em;
+}
+
+#scrollUpButton {
+	background-color: var(--color-accent-b);
 	filter: var(--drop-shadow);
 	position: fixed;
 	right: 5%;

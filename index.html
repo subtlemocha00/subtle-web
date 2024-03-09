@@ -32,8 +32,12 @@
 			<div id="navContainer" class="container-fluid">
 				<a href="#" class="navbar-brand">
 					<img
-						src="./assets/icons/subtle-web-studios.svg"
+						src="./assets/icons/logo_fav.svg"
 						alt="Subtle Web Studios Logo"
+						style="
+							filter: invert(55%) sepia(85%) saturate(417%) hue-rotate(348deg)
+								brightness(86%) contrast(81%);
+						"
 					/>
 				</a>
 				<button
@@ -45,7 +49,7 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<i class="fas fa-bars text-white"></i>
+					<i class="fas fa-bars color-accent-g"></i>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto text-end">
@@ -97,24 +101,36 @@
 				more visitors but also significantly boost your revenue.
 			</p>
 			<ul class="container row">
-				<li class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2">
-					<i class="card-img-top fs-1 fas fa-mobile-screen"></i>
+				<li
+					class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2"
+				>
+					<div class="icon-circle">
+						<i class="card-img-top fas fa-mobile-screen"></i>
+					</div>
 					<h5 class="card-title">Fully Responsive</h5>
 					<p class="card-text copyText">
 						We'll build your website to have a fully responsive UI/UX design,
 						meaning it'll look great on phones, tablets and PC's.
 					</p>
 				</li>
-				<li class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2">
-					<i class="card-img-top fs-1 fas fa-gauge-high"></i>
+				<li
+					class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2"
+				>
+					<div class="icon-circle">
+						<i class="card-img-top fas fa-gauge-high"></i>
+					</div>
 					<h5 class="card-title">Optimized</h5>
 					<p class="card-text copyText">
 						Enjoy lightning speed load times on your site for the smoothest,
 						most reliable user experience possible.
 					</p>
 				</li>
-				<li class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2">
-					<i class="card-img-top fs-1 fas fa-fingerprint"></i>
+				<li
+					class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2"
+				>
+					<div class="icon-circle">
+						<i class="card-img-top fas fa-fingerprint"></i>
+					</div>
 					<h5 class="card-title">Customized</h5>
 					<p class="card-text copyText">
 						Stand out to clients with a site that is uniquely customized and
@@ -125,7 +141,7 @@
 		</section>
 		<section
 			id="about"
-			class="d-flex flex-column align-items-center justify-content-center pt-2"
+			class="d-flex flex-column align-items-center justify-content-center pt-2 bg-accent-c"
 		>
 			<span class="sectionTitle fs-1 text-center">ABOUT</span>
 			<p class="text-center p-2 p-md-4 copyText">
@@ -152,10 +168,14 @@
 			<span class="sectionTitle fs-1 text-center">PRICING</span>
 			<ul class="container row">
 				<li
-					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 border-0 bg-accent-2 text-light"
+					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 text-light boxShadow"
 				>
-					<h5 class="card-title bg-accent-2">Lump Sum</h5>
-					<div class="card-subtitle mb-2">$3000 + Hosting Fees</div>
+					<h5 class="card-title list-group-item p-2 m-0 bg-accent-d">
+						Lump Sum
+					</h5>
+					<div class="card-subtitle p-2 list-item bg-accent-d">
+						$3000 + Hosting Fees
+					</div>
 					<ul class="list-group list-group-flush text-start">
 						<li class="list-group-item">
 							<i class="fa-regular fa-hand-point-right"></i> Hosting
@@ -173,10 +193,14 @@
 					</ul>
 				</li>
 				<li
-					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 border-0 bg-accent-1 text-light"
+					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 text-light boxShadow"
 				>
-					<h5 class="card-header card-title bg-accent-1 border-0">Standard</h5>
-					<div class="card-subtitle mb-2">$0 Down, $150/Month</div>
+					<h5 class="card-title list-group-item p-2 m-0 bg-accent-d">
+						Standard
+					</h5>
+					<div class="card-subtitle p-2 list-item bg-accent-d">
+						$0 Down, $150/Month
+					</div>
 					<ul class="list-group list-group-flush text-start">
 						<li class="list-group-item">
 							<i class="fa-regular fa-hand-point-right"></i> Hosting
@@ -194,9 +218,14 @@
 					</ul>
 				</li>
 				<li
-					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 border-0 bg-accent-2 text-light"
+					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 text-light boxShadow"
 				>
-					<h5 class="card-title bg-accent-2">Other Services</h5>
+					<h5 class="card-title list-group-item p-2 m-0 bg-accent-d">
+						Other Services
+					</h5>
+					<div class="card-subtitle p-2 list-item bg-accent-d">
+						Contact Us For Details
+					</div>
 					<ul class="list-group list-group-flush text-start">
 						<li class="list-group-item">
 							<i class="fa-regular fa-hand-point-right"></i> Logo & Graphic
@@ -216,7 +245,7 @@
 				</li>
 			</ul>
 		</section>
-		<div id="scrollUpButton" class="btn btn-light">
+		<div id="scrollUpButton" class="btn">
 			<i class="fas fa-arrow-up"></i>
 		</div>
 	</body>

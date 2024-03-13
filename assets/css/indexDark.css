@@ -1,0 +1,40 @@
+:root {
+	/* DARK THEME */
+	--color-main-dark: #c97e36;
+	--color-text-dark: #f4f4f6;
+	--color-accent-a-dark: #707070;
+	--color-accent-b-dark: #98a9d1;
+	--color-accent-d-dark: #323a45;
+	--color-accent-g-dark: #c97e36;
+
+	/* shadows */
+	--drop-shadow: drop-shadow(0 5px 5px var(--color-text-dark));
+
+	--text-outline-dark: 2px 2px #f4f4f6, -2px 2px #f4f4f6, 2px -2px #f4f4f6,
+		-2px -2px #f4f4f6;
+}
+
+body.darkMode {
+	background-color: var(--color-accent-d-dark);
+}
+
+.titleText.darkMode {
+	color: var(--color-main-dark);
+	text-shadow: var(--text-outline-dark);
+}
+
+.sectionTitle.darkMode {
+	color: var(--color-text-dark);
+}
+
+.copyText.darkMode {
+	color: var(--color-text-dark);
+}
+
+.card.darkMode {
+	background-color: var(--color-accent-b-dark);
+}
+
+.boxShadow.darkMode {
+	filter: var(--drop-shadow);
+}

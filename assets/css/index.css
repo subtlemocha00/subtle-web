@@ -3,14 +3,10 @@
 	font-size: 18px;
 	--text-outline: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000;
 	/* colors */
-	/* --color-text: #1d1f20; */
 	--color-text: #4b382a;
-	/* --color-main: #ddcba4; */
 	--color-accent-2: #c97e36;
-	/* --color-main: #c97e36; */
 	--color-main: #606eaa;
 	--color-accent-3: #b2ab99;
-	--color-accent-4: #4b382a;
 
 	--color-accent-b: #98a9d1;
 	--color-accent-c: #f4f4f6;
@@ -18,6 +14,7 @@
 	--color-accent-g: #c97e36;
 	/* shadows */
 	--drop-shadow: drop-shadow(0 5px 5px var(--color-text));
+	--light: #ccc;
 }
 
 *,
@@ -182,9 +179,9 @@ h6 {
 	background-color: var(--color-main);
 	color: var(--color-accent-c);
 	border-radius: 50%;
-	width: 1.6em;
-	height: 1.6em;
-	line-height: 1.6em;
+	width: 1.8em;
+	height: 1.8em;
+	line-height: 1.8em;
 }
 
 #scrollUpButton {
@@ -195,11 +192,75 @@ h6 {
 	bottom: 3%;
 }
 
+/* dark/light theme switch */
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--color-accent-g);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 4px;
+	bottom: 4px;
+	background-color: var(--color-accent-c);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: var(--color-accent-d);
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
 /* media queries */
 
 @media (min-width: 768px) {
 	:root {
-		font-size: 24px;
+		font-size: 20px;
 	}
 }
 

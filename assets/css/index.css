@@ -2,8 +2,10 @@
 	/* font */
 	font-size: 18px;
 	--text-outline: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000;
-	/* colors */
+
 	/* LIGHT THEME */
+
+	/* colors */
 	--color-main: #606eaa;
 	--color-text: #4b382a;
 	--color-accent-a: #707070;
@@ -14,6 +16,11 @@
 
 	/* shadows */
 	--drop-shadow: drop-shadow(0 5px 5px var(--color-text));
+
+	/* header overlay */
+	--colors: rgb(57, 54, 201);
+	--overlay-color-value: 57, 54, 201;
+	--overlay-opacity-value: 0.25;
 }
 
 *,
@@ -85,6 +92,7 @@ h6 {
 	font-family: "Kanit";
 	font-weight: 700;
 	text-shadow: var(--text-outline);
+	z-index: 1000;
 }
 
 .sectionTitle {
@@ -116,14 +124,23 @@ h6 {
 }
 
 #landing {
-	background-image: url("../images/coffee_pc_a_lg.webp");
+	background-image: url("../images/desktop_a.webp");
 	background-size: cover;
 	background-position: center;
 	min-height: 110svh;
 }
 
-#limited {
-	font-size: 12px;
+.overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 110svh;
+	background-color: rgba(
+		var(--overlay-color-value),
+		var(--overlay-opacity-value)
+	);
 }
 
 /* bootstrap and font awesome changes */

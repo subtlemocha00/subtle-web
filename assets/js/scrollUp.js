@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", (e) => {
 	const scrollUpButton = document.getElementById("scrollUpButton");
-
+	scrollUpButton.addEventListener("click", () => {});
 	// 	const handleScroll = () => {
 	// 		if (!navContainer) return;
 	// 		if (window.scrollY === 0) {

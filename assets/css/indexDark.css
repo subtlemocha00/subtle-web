@@ -7,6 +7,9 @@
 	--color-accent-d-dark: #323a45;
 	--color-accent-g-dark: #c97e36;
 
+	--overlay-color-value-dark: 57, 54, 201;
+	--overlay-opacity-value-dark: 0.15;
+
 	/* shadows */
 	--drop-shadow: drop-shadow(0 5px 5px var(--color-text-dark));
 
@@ -16,6 +19,18 @@
 
 body.darkMode {
 	background-color: var(--color-accent-d-dark);
+}
+
+.overlay.darkMode {
+	/* position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 110svh; */
+	background-color: rgba(
+		var(--overlay-color-value-dark),
+		var(--overlay-opacity-value-dark)
+	);
 }
 
 .titleText.darkMode {
@@ -32,6 +47,12 @@ body.darkMode {
 }
 
 .card.darkMode {
+	background-color: var(--color-accent-b-dark);
+}
+.list-group-item.darkMode {
+	background-color: var(--color-accent-b-dark);
+}
+.list-group.darkMode {
 	background-color: var(--color-accent-b-dark);
 }
 

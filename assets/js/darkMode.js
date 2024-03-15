@@ -14,10 +14,12 @@ const toggleDarkMode = () => {
 
 	document.body.classList.toggle("darkMode");
 	titleText.classList.toggle("darkMode");
-	overlay.classList.toggle("d-block");
+	overlay.classList.toggle("darkMode");
 	console.log("Dark Mode Toggled");
+	console.log(priceCards);
 	sectionTitle.forEach((element) => element.classList.toggle("darkMode"));
 	copyText.forEach((element) => element.classList.toggle("darkMode"));
 	serviceCards.forEach((element) => element.classList.toggle("darkMode"));
 	blogCards.forEach((element) => element.classList.toggle("darkMode"));
+	priceCards.forEach((element) => element.classList.toggle("darkMode"));
 };

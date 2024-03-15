@@ -18,9 +18,9 @@
 	--drop-shadow: drop-shadow(0 5px 5px var(--color-text));
 
 	/* header overlay */
-	--colors: rgb(57, 54, 201);
-	--overlay-color-value: 57, 54, 201;
-	--overlay-opacity-value: 0.25;
+	--colors: rgb(201, 126, 54);
+	--overlay-color-value: 201, 126, 54;
+	--overlay-opacity-value: 0.15;
 }
 
 *,
@@ -115,8 +115,14 @@ h6 {
 
 /* background colors */
 
+.bg-accent-b {
+	background-color: var(--color-accent-b);
+}
 .bg-accent-d {
 	background-color: var(--color-accent-d);
+}
+.bg-accent-g {
+	background-color: var(--color-accent-g);
 }
 
 .boxShadow {
@@ -131,7 +137,6 @@ h6 {
 }
 
 .overlay {
-	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;

@@ -6,21 +6,22 @@
 	/* LIGHT THEME */
 
 	/* colors */
+	/* --color-text: #4b382a; */
 	--color-main: #606eaa;
-	--color-text: #4b382a;
+	--color-text: #323a45;
 	--color-accent-a: #707070;
 	--color-accent-b: #98a9d1;
 	--color-accent-c: #f4f4f6;
 	--color-accent-d: #323a45;
-	--color-accent-g: #c97e36;
+	--color-accent-e: #c97e36;
 
 	/* shadows */
-	--drop-shadow: drop-shadow(0 5px 5px var(--color-text));
+	--box-shadow: 0 4px 10px #323a45;
 
 	/* header overlay */
 	--colors: rgb(201, 126, 54);
-	--overlay-color-value: 201, 126, 54;
-	--overlay-opacity-value: 0.15;
+	--overlay-color-value: 75, 56, 42;
+	--overlay-opacity-value: 0.35;
 }
 
 *,
@@ -106,14 +107,28 @@ h6 {
 	color: var(--color-accent-a);
 }
 
-.bg-main {
-	background-color: var(--color-main);
+.color-accent-e {
+	color: var(--color-accent-e);
 }
-.color-accent-g {
-	color: var(--color-accent-g);
+
+#services ul li {
+	opacity: 0;
+}
+
+#services ul li h5,
+#blog ul li h5 {
+	color: var(--color-text);
+}
+
+#pricing ul li h5,
+#pricing ul li div {
+	color: var(--color-accent-c);
 }
 
 /* background colors */
+.bg-main {
+	background-color: var(--color-main);
+}
 
 .bg-accent-b {
 	background-color: var(--color-accent-b);
@@ -122,11 +137,11 @@ h6 {
 	background-color: var(--color-accent-d);
 }
 .bg-accent-g {
-	background-color: var(--color-accent-g);
+	background-color: var(--color-accent-e);
 }
 
 .boxShadow {
-	filter: var(--drop-shadow);
+	box-shadow: var(--box-shadow);
 }
 
 #landing {
@@ -163,7 +178,7 @@ h6 {
 
 .navShrink {
 	margin-top: 0em;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 .navbar-brand img {
 	height: 3.5em;
@@ -190,6 +205,7 @@ h6 {
 }
 
 #scrollUpButton {
+	color: var(--color-accent-c);
 	background-color: var(--color-accent-b);
 	filter: var(--drop-shadow);
 	position: fixed;
@@ -221,7 +237,7 @@ h6 {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: var(--color-accent-g);
+	background-color: var(--color-accent-e);
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
@@ -287,4 +303,39 @@ input:checked + .slider:before {
 	to {
 		height: 3.5em;
 	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fade-in-element {
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-duration: 1.25s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes slideInFromLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.slide-in {
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
 }

@@ -11,12 +11,12 @@ const toggleDarkMode = () => {
 	const blogCards = document.querySelectorAll("#blog ul > li");
 	const priceCards = document.querySelectorAll("#pricing ul > li");
 	const overlay = document.querySelector(".overlay");
+	const scrollUpButton = document.querySelector("#scrollUpButton");
 
 	document.body.classList.toggle("darkMode");
 	titleText.classList.toggle("darkMode");
 	overlay.classList.toggle("darkMode");
-	console.log("Dark Mode Toggled");
-	console.log(priceCards);
+	scrollUpButton.classList.toggle("darkMode");
 	sectionTitle.forEach((element) => element.classList.toggle("darkMode"));
 	copyText.forEach((element) => element.classList.toggle("darkMode"));
 	serviceCards.forEach((element) => element.classList.toggle("darkMode"));

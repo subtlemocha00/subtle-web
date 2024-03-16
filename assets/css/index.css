@@ -106,7 +106,9 @@ h6 {
 .copyText {
 	color: var(--color-accent-a);
 }
-
+.color-accent-c {
+	color: var(--color-accent-c);
+}
 .color-accent-e {
 	color: var(--color-accent-e);
 }

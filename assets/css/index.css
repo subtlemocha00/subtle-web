@@ -19,7 +19,7 @@
 	--box-shadow: 0 4px 10px #323a45;
 
 	/* header overlay */
-	--colors: rgb(201, 126, 54);
+	--color-accent-e-hover: 201, 126, 54;
 	--overlay-color-value: 75, 56, 42;
 	--overlay-opacity-value: 0.35;
 }
@@ -165,6 +165,18 @@ h6 {
 	);
 }
 
+header a {
+	z-index: 1;
+}
+header a:hover {
+	color: var(--color-accent-c);
+	background-color: var(--color-main);
+	border-radius: 0.35rem;
+}
+header button:hover {
+	background-color: var(--color-main);
+}
+
 /* bootstrap and font awesome changes */
 .navbar-toggler {
 	border: none;
@@ -281,9 +293,16 @@ input:checked + .slider:before {
 
 /* media queries */
 
-@media (min-width: 768px) {
+@media (min-width: 1023px) {
 	:root {
-		font-size: 20px;
+		font-size: 22px;
+	}
+	#pricing > ul > li:nth-child(2) {
+		transform: scale(120%);
+		z-index: 9;
+	}
+	#pricing > button {
+		margin-top: 1rem;
 	}
 }
 

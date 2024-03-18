@@ -23,7 +23,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./assets/js/navbar.js" crossorigin="anonymous"></script>
-		<script src="./assets/js/scrollUp.js" crossorigin="anonymous"></script>
 		<script src="./assets/js/animations.js" crossorigin="anonymous"></script>
 		<script src="./assets/js/darkMode.js" crossorigin="anonymous"></script>
 	</head>
@@ -62,24 +61,22 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav ms-auto text-end">
 							<li class="nav-item">
-								<a class="nav-link text-white active" href="#landing"
-									>Home</a
-								>
+								<a class="nav-link text-white active" href="#landing">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#services">Services</a>
+								<a class="nav-link color-accent-c" href="#sectionA">Services</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#about">About</a>
+								<a class="nav-link color-accent-c" href="#sectionB">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#blog">Our Blog</a>
+								<a class="nav-link color-accent-c" href="#sectionC">Our Blog</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#pricing">Pricing</a>
+								<a class="nav-link color-accent-c" href="#sectionD">Pricing</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#contact">Contact</a>
+								<a class="nav-link color-accent-c" href="#sectionE">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -88,22 +85,29 @@
 		</nav>
 		<header
 			id="landing"
-			class="d-flex flex-column align-items-center justify-content-center mb-5"
+			class="d-flex flex-column align-items-center justify-content-center"
 		>
 			<span id="welcome" class="titleText text-center p-2">
 				SUBTLE WEB STUDIOS
 			</span>
 			<a class="" href="#contact">
-				<button type="button" class="btn bg-accent-g color-accent-c">
+				<button type="button" class="btn bg-accent-e color-accent-c">
 					Contact Us
 				</button>
 			</a>
 			<div id="overlay" class="overlay"></div>
+			<picture class="landingBackground"
+				><source
+					srcset="./assets/images/desktop_a.webp"
+					media="(min-width: 600px)" />
+				<img src="./assets/images/desktop_a-m.webp" alt="desktop background"
+			/></picture>
 		</header>
 		<section
 			id="services"
 			class="d-flex flex-column align-items-center justify-content-center"
 		>
+			<div id="sectionA" style="height: 3.25rem"></div>
 			<h2 class="sectionTitle fs-1 text-center">SERVICES</h2>
 			<p class="text-center p-2 mx-md-5 px-md-5 copyText">
 				We deliver bespoke web development solutions for businesses of all
@@ -111,10 +115,11 @@
 				engagement and growth.
 			</p>
 			<p class="text-center p-2 mx-md-5 px-md-5 copyText">
-				Operating from Sarnia, Ontario, Canada, we pride ourselves on our meticulous attention to
-				detail, guaranteeing optimal site performance and seamless user
-				experience. Let us transform your digital presence to not only attract
-				more visitors but also significantly boost your revenue.
+				Operating from Sarnia, Ontario, Canada, we pride ourselves on our
+				meticulous attention to detail, guaranteeing optimal site performance
+				and seamless user experience. Let us transform your digital presence to
+				not only attract more visitors but also significantly boost your
+				revenue.
 			</p>
 			<ul class="container row">
 				<li
@@ -157,10 +162,11 @@
 		</section>
 		<section
 			id="about"
-			class="d-flex flex-column align-items-center justify-content-center py-5 bg-accent-c"
+			class="d-flex flex-column align-items-center justify-content-center"
 		>
+			<div id="sectionB" style="height: 3.25rem"></div>
 			<h2 class="sectionTitle fs-1 text-center">ABOUT</h2>
-			<p class="text-center p-2 mx-md-5 px-md-5 copyText">
+			<p class="text-center px-2 mx-md-5 px-md-5 copyText">
 				My name is Kevin, the founder of Subtle Web Studios. My journey into web
 				development was sparked by a passion for technology and an
 				entrepreneurial spirit, aiming to merge innovative design with
@@ -170,7 +176,7 @@
 				mastered the craft of designing websites that stand out for their
 				aesthetics and usability.
 			</p>
-			<p class="text-center p-2 mx-md-5 px-md-5 copyText">
+			<p class="text-center px-2 mx-md-5 px-md-5 copyText">
 				At Subtle Web Studios, we're not just about building websites; we're
 				about building your business's future on the web. Every project is a new
 				opportunity to help our clients achieve their digital ambitions,
@@ -179,10 +185,10 @@
 		</section>
 		<section
 			id="blog"
-			class="d-flex flex-column align-items-center justify-content-center pt-2"
+			class="d-flex flex-column align-items-center justify-content-center"
 		>
+			<div id="sectionC" style="height: 3.25rem"></div>
 			<h2 class="sectionTitle fs-1 text-center">OUR BLOG</h2>
-			<!-- RE-WRITE THIS SECTION -->
 			<p class="text-center px-2 mx-md-5 px-md-5 copyText">
 				We deliver bespoke web development solutions for businesses of all
 				sizes, with a special focus on crafting user-centric websites that drive
@@ -199,16 +205,16 @@
 					class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2"
 				>
 					<img
-						src="./assets/images/desktop_scene.png"
+						src="./assets/images/desktop_scene.webp"
 						alt="blog pic 1"
-						class="card-img-top mb-2"
+						class="image card-img-top mb-2"
 					/>
 					<h5 class="card-title">Why Responsive Websites Are Vital</h5>
 					<p class="card-text copyText">
 						Learn how having a responsive website improves the user experience
 						and drives client retention.
 					</p>
-					<button type="button" class="btn bg-accent-g text-white">
+					<button type="button" class="btn bg-accent-e text-white">
 						Read More
 					</button>
 				</li>
@@ -216,7 +222,7 @@
 					class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2"
 				>
 					<img
-						src="./assets/images/coffee_pc_a_lg.webp"
+						src="./assets/images/seo_b.webp"
 						alt="blog pic 2"
 						class="card-img-top mb-2"
 					/>
@@ -225,7 +231,7 @@
 						Unlock the secrets of Search Engine Optimization: Elevating Your
 						website's visibility and driving business growth.
 					</p>
-					<button type="button" class="btn bg-accent-g text-white">
+					<button type="button" class="btn bg-accent-e text-white">
 						Read More
 					</button>
 				</li>
@@ -233,7 +239,7 @@
 					class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2"
 				>
 					<img
-						src="./assets/images/wide_code_a.jpg"
+						src="./assets/images/wide_code_a.webp"
 						alt="blog pic 3"
 						class="card-img-top mb-2"
 					/>
@@ -242,7 +248,7 @@
 						Choosing the Right Type of Website To Grow Your Business and Convert
 						Your Visitors Into Customers.
 					</p>
-					<button type="button" class="btn bg-accent-g text-white">
+					<button type="button" class="btn bg-accent-e text-white">
 						Read More
 					</button>
 				</li>
@@ -250,10 +256,11 @@
 		</section>
 		<section
 			id="pricing"
-			class="d-flex flex-column align-items-center justify-content-center pt-2"
+			class="d-flex flex-column align-items-center justify-content-center"
 		>
-			<h2 class="sectionTitle fs-1 text-center">PRICING</h2>
-			<ul class="container container-fluid row my-3">
+			<div id="sectionD" style="height: 3.25rem"></div>
+			<h2 class="sectionTitle fs-1 text-center mb-lg-5">PRICING</h2>
+			<ul class="container container-fluid row justify-content-center">
 				<li
 					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 boxShadow"
 				>
@@ -310,7 +317,7 @@
 					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 boxShadow"
 				>
 					<h5 class="card-title list-group-item p-2 m-0 bg-accent-d">
-							Other Services
+						Other Services
 					</h5>
 					<div class="card-subtitle p-2 list-item bg-accent-d">
 						Contact Us For Details
@@ -336,39 +343,88 @@
 		</section>
 		<section
 			id="contact"
-			class="d-flex flex-column align-items-center justify-content-center py-5 bg-accent-c"
+			class="d-flex flex-column align-items-center justify-content-center"
 		>
-			<!-- <div class="row"> -->
-				<!-- <div class="col-lg-12"> -->
-					<div class="bg-accent-d color-accent-c p-3 shadow rounded mx-2">
-						<h2 class="sectionTitle fs-1 color-accent-e text-center">CONTACT US</h2>
-						<p class="m-3">Got a project in mind? Let’s chat about turning those ideas into digital reality.</p>
-						<form>
-					  		<div class="mb-3">
-								<input type="text" class="form-control" placeholder="Your Name *" required>
-					  		</div>
-							<div class="mb-3">
-								<input type="email" class="form-control" placeholder="Your Email *" required>
-							</div>
-							<div class="mb-3">
-								<input type="tel" class="form-control" placeholder="Your Phone *" required>
-							</div>
-							<div class="mb-3">
-								<textarea class="form-control" placeholder="Your Message *" rows="3" required></textarea>
-							</div>
-					  		<button type="submit" class="btn bg-accent-g color-accent-c btn-lg">Send Message</button>
-						</form>
-				 	</div>
-				<!-- </div> -->
-			<!-- </div> -->
+			<div id="sectionE" style="height: 3.25rem"></div>
+			<div
+				id="contactFormContainer"
+				class="bg-accent-d color-accent-c p-3 boxShadow rounded mx-2 mb-4"
+			>
+				<h2 class="sectionTitle fs-1 color-accent-e text-center">CONTACT US</h2>
+				<p class="m-3 text-center">
+					Got a project in mind? Let&#39;s chat about turning your ideas into
+					digital reality.
+				</p>
+				<form
+					class="d-flex flex-column align-items-center justify-content-center"
+				>
+					<div class="mb-3 w-100">
+						<label for="name" class="visually-hidden">Name</label>
+						<input
+							id="name"
+							type="text"
+							class="form-control"
+							placeholder="Your Name *"
+							autocomplete="name"
+							required
+						/>
+					</div>
+					<div class="mb-3 w-100">
+						<label for="email" class="visually-hidden">Email</label>
+						<input
+							id="email"
+							type="email"
+							class="form-control"
+							placeholder="Your Email *"
+							autocomplete="email"
+							required
+						/>
+					</div>
+					<div class="mb-3 w-100">
+						<label for="tel" class="visually-hidden">Telephone</label>
+						<input
+							id="tel"
+							type="tel"
+							class="form-control"
+							placeholder="Your Phone *"
+							autocomplete="tel-national"
+							required
+						/>
+					</div>
+					<div class="mb-3 w-100">
+						<label for="message" class="visually-hidden">Message</label>
+						<textarea
+							id="message"
+							class="form-control"
+							placeholder="Your Message *"
+							rows="3"
+							required
+						></textarea>
+					</div>
+					<button
+						id="formSubmitButton"
+						type="submit"
+						class="btn bg-accent-e color-accent-c btn-lg"
+					>
+						Send Message
+					</button>
+				</form>
+			</div>
 		</section>
 		<footer id="footer" class="footer text-center">
-			<p>If you prefer, you can also email us directly at <a href="mailto:yourcompanyemail@example.com?subject=Inquiry from the Website&body=Hi there,"><script>document.write('inquiries' + '@' + 'subtlewebstudios.com');</script></a></p>
-			<span>Hand-Crafted by Subtle Web Studios 2024 &#169</span>
+			<p>
+				If you prefer, you can also email us directly at
+				<a
+					href="mailto:yourcompanyemail@example.com?subject=Inquiry from the Website&body=Hi there,"
+					><script>
+						document.write("inquiries" + "@" + "subtlewebstudios.com");
+					</script></a
+				>
+			</p>
+			<p>Hand-Crafted by Subtle Web Studios 2024 &#169;</p>
 		</footer>
 		<a href="#top" id="scrollUpButton" class="btn boxShadow">
 			<i class="fas fa-arrow-up"></i>
 		</a>
 	</body>
 </html>
-

@@ -10,12 +10,16 @@ const toggleDarkMode = () => {
 	const serviceCards = document.querySelectorAll("#services ul > li");
 	const blogCards = document.querySelectorAll("#blog ul > li");
 	const priceCards = document.querySelectorAll("#pricing ul > li");
+	const contactFormContainer = document.querySelector("#contactFormContainer");
 	const overlay = document.querySelector(".overlay");
+	const footer = document.querySelector("#footer");
 	const scrollUpButton = document.querySelector("#scrollUpButton");
 
 	document.body.classList.toggle("darkMode");
 	titleText.classList.toggle("darkMode");
 	overlay.classList.toggle("darkMode");
+	contactFormContainer.classList.toggle("darkMode");
+	footer.classList.toggle("darkMode");
 	scrollUpButton.classList.toggle("darkMode");
 	sectionTitle.forEach((element) => element.classList.toggle("darkMode"));
 	copyText.forEach((element) => element.classList.toggle("darkMode"));

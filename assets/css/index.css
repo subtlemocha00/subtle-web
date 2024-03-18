@@ -87,6 +87,18 @@ h6 {
 	src: url("../fonts/Kanit/Kanit-Bold.ttf") format("truetype");
 }
 
+header a {
+	z-index: 1;
+}
+header a:hover {
+	color: var(--color-accent-c);
+	background-color: var(--color-main);
+	border-radius: 0.35rem;
+}
+header button:hover {
+	background-color: var(--color-main);
+}
+
 .titleText {
 	color: var(--color-main);
 	font-size: 2.5em;
@@ -122,12 +134,16 @@ h6 {
 	color: var(--color-text);
 }
 
+#pricing ul > li {
+	max-width: 350px;
+}
+
 #pricing ul li h5,
 #pricing ul li div {
 	color: var(--color-accent-c);
 }
 
-/* background colors */
+/*** background colors ***/
 .bg-main {
 	background-color: var(--color-main);
 }
@@ -138,7 +154,7 @@ h6 {
 .bg-accent-d {
 	background-color: var(--color-accent-d);
 }
-.bg-accent-g {
+.bg-accent-e {
 	background-color: var(--color-accent-e);
 }
 
@@ -153,6 +169,25 @@ h6 {
 	min-height: 110svh;
 }
 
+.landingBackground {
+	z-index: -1;
+	/* position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover; */
+}
+
+.landingBackground img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
 .overlay {
 	position: absolute;
 	top: 0;
@@ -165,19 +200,6 @@ h6 {
 	);
 }
 
-header a {
-	z-index: 1;
-}
-header a:hover {
-	color: var(--color-accent-c);
-	background-color: var(--color-main);
-	border-radius: 0.35rem;
-}
-header button:hover {
-	background-color: var(--color-main);
-}
-
-/* bootstrap and font awesome changes */
 .navbar-toggler {
 	border: none;
 }
@@ -218,6 +240,10 @@ header button:hover {
 	line-height: 1.8em;
 }
 
+.footer {
+	color: var(--color-accent-d);
+}
+
 #scrollUpButton {
 	color: var(--color-accent-c);
 	background-color: var(--color-accent-b);
@@ -227,8 +253,7 @@ header button:hover {
 	bottom: 3%;
 }
 
-/* dark/light theme switch */
-
+/*** dark/light theme switch ***/
 .switch {
 	position: relative;
 	display: inline-block;
@@ -236,14 +261,12 @@ header button:hover {
 	height: 24px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
 	opacity: 0;
 	width: 0;
 	height: 0;
 }
 
-/* The slider */
 .slider {
 	position: absolute;
 	cursor: pointer;
@@ -282,7 +305,6 @@ input:checked + .slider:before {
 	transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
 	border-radius: 34px;
 }
@@ -291,8 +313,7 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-/* media queries */
-
+/*** media queries ***/
 @media (min-width: 1023px) {
 	:root {
 		font-size: 22px;
@@ -306,7 +327,7 @@ input:checked + .slider:before {
 	}
 }
 
-/* animations */
+/*** animations ***/
 
 @keyframes height {
 	from {

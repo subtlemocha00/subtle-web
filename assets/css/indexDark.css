@@ -61,6 +61,17 @@ body.darkMode {
 	box-shadow: var(--box-shadow-dark);
 }
 
+#contactFormContainer.darkMode {
+	background-color: var(--color-accent-b-dark);
+}
+#contactFormContainer.darkMode > p {
+	color: var(--color-accent-d-dark);
+}
+
+.footer.darkMode {
+	color: var(--color-text-dark);
+}
+
 #scrollUpButton.darkMode {
 	color: var(--color-accent-d-dark);
 }

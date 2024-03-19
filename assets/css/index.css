@@ -1,7 +1,8 @@
 :root {
 	/* font */
 	font-size: 18px;
-	--text-outline: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000;
+	/* --text-outline: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000; */
+	--text-outline: 0;
 
 	/* LIGHT THEME */
 
@@ -38,7 +39,9 @@ body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
-
+a {
+	text-decoration: none;
+}
 img,
 picture,
 video,
@@ -118,9 +121,15 @@ header button:hover {
 .copyText {
 	color: var(--color-accent-a);
 }
+
+a.copyText:hover {
+	color: var(--color-accent-e);
+}
+
 .color-accent-c {
 	color: var(--color-accent-c);
 }
+
 .color-accent-e {
 	color: var(--color-accent-e);
 }
@@ -166,10 +175,6 @@ header button:hover {
 	min-height: 110svh;
 }
 
-.landingBackground {
-	z-index: -1;
-}
-
 .landingBackground img {
 	position: absolute;
 	height: 110%;
@@ -177,6 +182,10 @@ header button:hover {
 	top: 0;
 	left: 0;
 	object-fit: cover;
+}
+
+.landingBackground {
+	z-index: -1;
 }
 
 .overlay {
@@ -189,6 +198,40 @@ header button:hover {
 		var(--overlay-color-value),
 		var(--overlay-opacity-value)
 	);
+}
+
+/***** BLOG *****/
+#landing.blog {
+	min-height: 35svh;
+}
+
+.landingBackground.blog img {
+	position: absolute;
+	height: 35%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+.overlay.blog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 35svh;
+	background-color: rgba(
+		var(--overlay-color-value),
+		var(--overlay-opacity-value)
+	);
+}
+
+.nav-link {
+	color: var(--color-accent-c);
+}
+
+.nav-link:hover {
+	color: var(--color-accent-d);
 }
 
 .navbar-toggler {

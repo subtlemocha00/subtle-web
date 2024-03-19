@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preload" as="image" href="./assets/images/desktop_a-m.webp" />
-		<title>Subtle Web Studios - Web Development Services</title>
+		<title>Subtle Web Studios - Web Development Blog</title>
 		<link rel="icon" href="./assets/icons/logo_fav.svg" type="image/x-icon" />
 		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./assets/css/index.css" />
@@ -63,12 +63,7 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav ms-auto text-end">
 							<li class="nav-item">
-								<a
-									class="nav-link color-accent-c active"
-									href="#landing"
-									aria-current="true"
-									>Home</a
-								>
+								<a class="nav-link text-white" href="./index.html">Home</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link color-accent-c" href="#sectionA">Services</a>
@@ -76,8 +71,8 @@
 							<li class="nav-item">
 								<a class="nav-link color-accent-c" href="#sectionB">About</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="./blog.html"
+							<li class="nav-item active">
+								<a class="nav-link color-accent-c" href="#" aria-current="true"
 									>Our Blog</a
 								>
 							</li>
@@ -94,104 +89,22 @@
 		</nav>
 		<header
 			id="landing"
-			class="d-flex flex-column align-items-center justify-content-center"
+			class="blog d-flex flex-column align-items-center justify-content-center"
 		>
-			<span id="welcome" class="titleText text-center p-2">
-				SUBTLE WEB STUDIOS
-			</span>
+			<span id="welcome" class="titleText text-center p-2">BLOG</span>
 			<a class="" href="#contact">
 				<button type="button" class="btn bg-accent-e color-accent-c">
 					Contact Us
 				</button>
 			</a>
-			<div id="overlay" class="overlay"></div>
-			<picture class="landingBackground"
+			<div id="overlay" class="overlay blog"></div>
+			<picture class="landingBackground blog"
 				><source
 					srcset="./assets/images/desktop_a.webp"
 					media="(min-width: 600px)" />
 				<img src="./assets/images/desktop_a-m.webp" alt="desktop background"
 			/></picture>
 		</header>
-		<section
-			id="services"
-			class="d-flex flex-column align-items-center justify-content-center"
-		>
-			<div id="sectionA" style="height: 3.25rem"></div>
-			<h2 class="sectionTitle fs-1 text-center">SERVICES</h2>
-			<p class="text-center p-2 mx-md-5 px-md-5 copyText">
-				We deliver bespoke web development solutions for businesses of all
-				sizes, with a special focus on crafting user-centric websites that drive
-				engagement and growth.
-			</p>
-			<p class="text-center p-2 mx-md-5 px-md-5 copyText">
-				Operating from Sarnia, Ontario, Canada, we pride ourselves on our
-				meticulous attention to detail, guaranteeing optimal site performance
-				and seamless user experience. Let us transform your digital presence to
-				not only attract more visitors but also significantly boost your
-				revenue.
-			</p>
-			<ul class="container row">
-				<li
-					class="card card-body align-items-center text-center col-auto col-lg-3 m-2 col-sm-5 m-lg-2"
-				>
-					<div class="icon-circle">
-						<i class="card-img-top fas fa-mobile-screen"></i>
-					</div>
-					<h5 class="card-title">Fully Responsive</h5>
-					<p class="card-text copyText">
-						We'll build your website to have a fully responsive design, meaning
-						it'll look great on phones, tablets and PCs.
-					</p>
-				</li>
-				<li
-					class="card card-body align-items-center text-center col-auto col-lg-3 m-2 col-sm-5 m-lg-2"
-				>
-					<div class="icon-circle">
-						<i class="card-img-top fas fa-gauge-high"></i>
-					</div>
-					<h5 class="card-title">Optimized</h5>
-					<p class="card-text copyText">
-						Enjoy lightning fast load times on your site for the smoothest, most
-						reliable user experience possible.
-					</p>
-				</li>
-				<li
-					class="card card-body align-items-center text-center col-auto col-lg-3 m-2 col-sm-5 m-lg-2"
-				>
-					<div class="icon-circle">
-						<i class="card-img-top fas fa-fingerprint"></i>
-					</div>
-					<h5 class="card-title">Customized</h5>
-					<p class="card-text copyText">
-						Stand out to clients with a site that is uniquely customized and
-						hand-coded for your business.
-					</p>
-				</li>
-			</ul>
-		</section>
-		<section
-			id="about"
-			class="d-flex flex-column align-items-center justify-content-center"
-		>
-			<div id="sectionB" style="height: 3.25rem"></div>
-			<h2 class="sectionTitle fs-1 text-center">ABOUT</h2>
-			<p class="text-center px-2 mx-md-5 px-md-5 copyText">
-				My name is Kevin, the founder of Subtle Web Studios. My journey into web
-				development was sparked by a passion for technology and an
-				entrepreneurial spirit, aiming to merge innovative design with
-				functional solutions. Driven by the challenge of creating impactful
-				online experiences, I immersed myself in learning the art and science of
-				web development. Through dedication and a self-taught regimen, I've
-				mastered the craft of designing websites that stand out for their
-				aesthetics and usability.
-			</p>
-			<p class="text-center px-2 mx-md-5 px-md-5 copyText">
-				At Subtle Web Studios, we're not just about building websites; we're
-				about building your business's future on the web. Every project is a new
-				opportunity to help our clients achieve their digital ambitions,
-				providing bespoke solutions that elevate their online presence.
-			</p>
-		</section>
 		<section
 			id="blog"
 			class="d-flex flex-column align-items-center justify-content-center"
@@ -262,7 +175,6 @@
 					</button>
 				</li>
 			</ul>
-			<a class="copyText" href="./blog.html">See All Blog Articles</a>
 		</section>
 		<section
 			id="pricing"

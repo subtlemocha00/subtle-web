@@ -14,13 +14,22 @@
 	/* shadows */
 	--box-shadow-dark: 0 4px 10px var(--color-text-dark);
 
-	--text-outline-dark: 2px 2px #f4f4f6, -2px 2px #f4f4f6, 2px -2px #f4f4f6,
-		-2px -2px #f4f4f6;
+	/* --text-outline-dark: 2px 2px #f4f4f6, -2px 2px #f4f4f6, 2px -2px #f4f4f6,
+		-2px -2px #f4f4f6; */
+	--text-outline-dark: 0;
 }
 
 body.darkMode {
 	background-color: var(--color-accent-d-dark);
 }
+
+/* .nav-link.darkMode {
+	color: var(--color-accent-c);
+}
+
+.nav-link.darkMode:hover {
+	color: var(--color-accent-d);
+} */
 
 .overlay.darkMode {
 	background-color: rgba(

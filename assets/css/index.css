@@ -122,6 +122,10 @@ header button:hover {
 	color: var(--color-accent-a);
 }
 
+.copyText.update {
+	font-size: 0.65em;
+}
+
 a.copyText:hover {
 	color: var(--color-accent-e);
 }

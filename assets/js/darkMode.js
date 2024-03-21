@@ -9,6 +9,7 @@ const toggleDarkMode = () => {
 	const copyText = document.querySelectorAll(".copyText");
 	const serviceCards = document.querySelectorAll("#services ul > li");
 	const blogCards = document.querySelectorAll("#blog ul > li");
+	const archiveCards = document.querySelectorAll("#archive ul > li");
 	const priceCards = document.querySelectorAll("#pricing ul > li");
 	const contactFormContainer = document.querySelector("#contactFormContainer");
 	const overlay = document.querySelector(".overlay");
@@ -16,14 +17,21 @@ const toggleDarkMode = () => {
 	const scrollUpButton = document.querySelector("#scrollUpButton");
 
 	document.body.classList.toggle("darkMode");
-	titleText.classList.toggle("darkMode");
-	overlay.classList.toggle("darkMode");
-	contactFormContainer.classList.toggle("darkMode");
-	footer.classList.toggle("darkMode");
-	scrollUpButton.classList.toggle("darkMode");
-	sectionTitle.forEach((element) => element.classList.toggle("darkMode"));
-	copyText.forEach((element) => element.classList.toggle("darkMode"));
-	serviceCards.forEach((element) => element.classList.toggle("darkMode"));
-	blogCards.forEach((element) => element.classList.toggle("darkMode"));
-	priceCards.forEach((element) => element.classList.toggle("darkMode"));
+	if (titleText) titleText.classList.toggle("darkMode");
+	if (overlay) overlay.classList.toggle("darkMode");
+	if (contactFormContainer) contactFormContainer.classList.toggle("darkMode");
+	if (footer) footer.classList.toggle("darkMode");
+	if (scrollUpButton) scrollUpButton.classList.toggle("darkMode");
+	if (sectionTitle)
+		sectionTitle.forEach((element) => element.classList.toggle("darkMode"));
+	if (copyText)
+		copyText.forEach((element) => element.classList.toggle("darkMode"));
+	if (serviceCards)
+		serviceCards.forEach((element) => element.classList.toggle("darkMode"));
+	if (blogCards)
+		blogCards.forEach((element) => element.classList.toggle("darkMode"));
+	if (archiveCards)
+		archiveCards.forEach((element) => element.classList.toggle("darkMode"));
+	if (priceCards)
+		priceCards.forEach((element) => element.classList.toggle("darkMode"));
 };

@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preload" as="image" href="./assets/images/desktop_a-m.webp" />
-		<title>Blog | Subtle Web Studios</title>
-		<link rel="icon" href="./assets/icons/logo_fav.svg" type="image/x-icon" />
-		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="./assets/css/index.css" />
-		<link rel="stylesheet" href="./assets/css/indexDark.css" />
+		<link rel="preload" as="image" href="../assets/images/desktop_a-m.webp" />
+		<title>Why Responsive Websites Are Vital | Subtle Web Studios</title>
+		<link rel="icon" href="../assets/icons/logo_fav.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../assets/css/index.css" />
+		<link rel="stylesheet" href="../assets/css/indexDark.css" />
 		<script
 			src="https://kit.fontawesome.com/56b718db2c.js"
 			crossorigin="anonymous"
@@ -34,9 +34,9 @@
 			class="fixed-top navbar navbar-expand-lg bg-transparent"
 		>
 			<div id="navContainer" class="container-fluid">
-				<a href="./index.html" class="navbar-brand">
+				<a href="../index.html" class="navbar-brand">
 					<img
-						src="./assets/icons/logo_fav.svg"
+						src="../assets/icons/logo_fav.svg"
 						alt="Subtle Web Studios Logo"
 						style="
 							filter: invert(55%) sepia(85%) saturate(417%) hue-rotate(348deg)
@@ -63,7 +63,7 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav ms-auto text-end">
 							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="./index.html">Home</a>
+								<a class="nav-link color-accent-c" href="../index.html">Home</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link color-accent-c" href="#sectionA">Services</a>
@@ -72,7 +72,10 @@
 								<a class="nav-link color-accent-c" href="#sectionB">About</a>
 							</li>
 							<li class="nav-item active">
-								<a class="nav-link color-accent-c" href="#" aria-current="true"
+								<a
+									class="nav-link color-accent-c"
+									href="../blog.html"
+									aria-current="true"
 									>Blog</a
 								>
 							</li>
@@ -94,23 +97,35 @@
 			<div id="overlay" class="overlay blog"></div>
 			<picture class="landingBackground blog"
 				><source
-					srcset="./assets/images/desktop_a.webp"
+					srcset="../assets/images/desktop_a.webp"
 					media="(min-width: 600px)" />
-				<img src="./assets/images/desktop_a-m.webp" alt="desktop background"
+				<img src="../assets/images/desktop_a-m.webp" alt="desktop background"
 			/></picture>
 		</header>
-		<!-- formerly pricing -->
+		<!-- BLOG CONTENT GOES HERE -->
+		<main>
+			<!-- Unique content for this page -->
+			<article>
+				<h1 class="sectionTitle fs-1 text-center">
+					Why Responsive Websites Are Vital
+				</h1>
+				<p>This is the main content of the article...</p>
+			</article>
+		</main>
+
 		<section
 			id="blog"
 			class="d-flex flex-column align-items-center justify-content-center mt-5"
 		>
-			<h2 class="sectionTitle fs-1 text-center">BLOG</h2>
+			<h2 class="sectionTitle fs-1 text-center">
+				Why Responsive Websites Are Vital
+			</h2>
 			<ul class="container">
 				<li class="card m-2 border-0 p-2">
 					<div class="row">
 						<div class="col-md-7 card-body">
 							<img
-								src="./assets/images/responsive_c.webp"
+								src="../assets/images/responsive_c.webp"
 								alt="Responsive Development"
 								class="img-fluid"
 								height="100%"
@@ -125,7 +140,7 @@
 							<p class="card-text copyText update text-end">
 								Last Updated March 18, 2024
 							</p>
-							<a href="./blog/article-seo.html" class="stretched-link"></a>
+							<a href="#" class="stretched-link"></a>
 						</div>
 					</div>
 				</li>
@@ -133,7 +148,7 @@
 					<div class="row">
 						<div class="col-md-7 card-body order-md-2">
 							<img
-								src="./assets/images/hand_coded.webp"
+								src="../assets/images/hand_coded.webp"
 								alt="Hand-coded Websites"
 								class="img-fluid"
 							/>
@@ -155,7 +170,7 @@
 					<div class="row">
 						<div class="col-md-7 card-body">
 							<img
-								src="./assets/images/seo_b.webp"
+								src="../assets/images/seo_b.webp"
 								alt="Search Engine Optimization"
 								class="img-fluid"
 							/>
@@ -183,7 +198,7 @@
 			<ul class="container row">
 				<li class="card card-body align-items-center text-center col-md-3 m-2">
 					<img
-						src="./assets/images/seo_b.webp"
+						src="../assets/images/seo_b.webp"
 						alt="Animations"
 						class="img-fluid"
 					/>
@@ -196,7 +211,7 @@
 				</li>
 				<li class="card card-body align-items-center text-center col-md-3 m-2">
 					<img
-						src="./assets/images/user_centric.webp"
+						src="../assets/images/user_centric.webp"
 						alt="blog pic 3"
 						class="card-img-top mb-2"
 					/>
@@ -210,7 +225,7 @@
 				</li>
 				<li class="card card-body align-items-center text-center col-md-3 m-2">
 					<img
-						src="./assets/images/accessibility.webp"
+						src="../assets/images/accessibility.webp"
 						alt="blog pic 3"
 						class="card-img-top mb-2"
 					/>
@@ -224,7 +239,7 @@
 				</li>
 				<li class="card card-body align-items-center text-center col-md-3 m-2">
 					<img
-						src="./assets/images/speeding_cars.webp"
+						src="../assets/images/speeding_cars.webp"
 						alt="blog pic 3"
 						class="card-img-top mb-2"
 					/>
@@ -237,7 +252,7 @@
 				</li>
 				<li class="card card-body align-items-center text-center col-md-3 m-2">
 					<img
-						src="./assets/images/css_grid.webp"
+						src="../assets/images/css_grid.webp"
 						alt="blog pic 3"
 						class="card-img-top mb-2"
 					/>
@@ -250,7 +265,7 @@
 				</li>
 				<li class="card card-body align-items-center text-center col-md-3 m-2">
 					<img
-						src="./assets/images/data_analytics.webp"
+						src="../assets/images/data_analytics.webp"
 						alt="blog pic 3"
 						class="card-img-top mb-2"
 					/>
@@ -265,7 +280,7 @@
 				</li>
 				<li class="card card-body align-items-center text-center col-md-3 m-2">
 					<img
-						src="./assets/images/bubble_analytics.webp"
+						src="../assets/images/bubble_analytics.webp"
 						alt="blog pic 3"
 						class="card-img-top mb-2"
 					/>
@@ -290,19 +305,19 @@
 		</a>
 		<!-- JS Files -->
 		<script
-			src="./assets/js/bootstrap.min.js"
+			src="../assets/js/bootstrap.min.js"
 			crossorigin="anonymous"
 			defer
 			async
 		></script>
-		<script src="./assets/js/navbar.js" crossorigin="anonymous" defer></script>
+		<script src="../assets/js/navbar.js" crossorigin="anonymous" defer></script>
 		<script
-			src="./assets/js/animations.js"
+			src="../assets/js/animations.js"
 			crossorigin="anonymous"
 			defer
 		></script>
 		<script
-			src="./assets/js/darkMode.js"
+			src="../assets/js/darkMode.js"
 			crossorigin="anonymous"
 			defer
 		></script>

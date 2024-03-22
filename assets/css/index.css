@@ -130,6 +130,10 @@ a.copyText:hover {
 	color: var(--color-accent-e);
 }
 
+.color-accent-a {
+	color: var(--color-accent-a);
+}
+
 .color-accent-c {
 	color: var(--color-accent-c);
 }
@@ -234,6 +238,10 @@ a.copyText:hover {
 		var(--overlay-color-value),
 		var(--overlay-opacity-value)
 	);
+}
+
+section ul li {
+	font-size: 0.8em;
 }
 
 .nav-link {

@@ -29,6 +29,7 @@
 		<!-- End Google Analytics -->
 	</head>
 	<body>
+		<!-- IMPLEMENT SCROLLSPY FOR NAVBAR AS USER SCROLLS -->
 		<nav
 			id="navParent"
 			class="fixed-top navbar navbar-expand-lg bg-transparent"
@@ -221,7 +222,7 @@
 						Learn how having a responsive website improves the user experience
 						and drives client retention.
 					</p>
-					<button type="button" class="btn bg-accent-e text-white">
+					<button type="button" class="btn btn-sm bg-accent-e text-white">
 						Read More
 					</button>
 				</li>
@@ -238,7 +239,7 @@
 						Unlock the secrets of Search Engine Optimization: Elevating Your
 						website's visibility and driving business growth.
 					</p>
-					<button type="button" class="btn bg-accent-e text-white">
+					<button type="button" class="btn btn-sm bg-accent-e text-white">
 						Read More
 					</button>
 				</li>
@@ -255,7 +256,7 @@
 						Choosing the Right Type of Website To Grow Your Business and Convert
 						Your Visitors Into Customers.
 					</p>
-					<button type="button" class="btn bg-accent-e text-white">
+					<button type="button" class="btn btn-sm bg-accent-e text-white">
 						Read More
 					</button>
 				</li>
@@ -366,53 +367,53 @@
 				<form
 					class="d-flex flex-column align-items-center justify-content-center"
 				>
-					<div class="mb-3 w-100">
-						<label for="name" class="visually-hidden">Name</label>
+					<div class="mb-3 w-100 form-floating">
 						<input
 							id="name"
 							type="text"
 							class="form-control"
-							placeholder="Your Name *"
+							placeholder="Name"
 							autocomplete="name"
 							required
 						/>
+						<label for="name" class="color-accent-a">Name</label>
 					</div>
-					<div class="mb-3 w-100">
-						<label for="email" class="visually-hidden">Email</label>
+					<div class="mb-3 w-100 form-floating">
 						<input
 							id="email"
 							type="email"
 							class="form-control"
-							placeholder="Your Email *"
+							placeholder="Email"
 							autocomplete="email"
 							required
 						/>
+						<label for="email" class="color-accent-a">Email</label>
 					</div>
-					<div class="mb-3 w-100">
-						<label for="tel" class="visually-hidden">Telephone</label>
+					<div class="mb-3 w-100 form-floating">
 						<input
 							id="tel"
 							type="tel"
 							class="form-control"
-							placeholder="Your Phone *"
+							placeholder="Phone Number"
 							autocomplete="tel-national"
 							required
 						/>
+						<label for="tel" class="color-accent-a">Phone Number</label>
 					</div>
-					<div class="mb-3 w-100">
-						<label for="message" class="visually-hidden">Message</label>
+					<div class="mb-3 w-100 form-floating">
 						<textarea
 							id="message"
 							class="form-control"
-							placeholder="Your Message *"
+							placeholder="Message"
 							rows="3"
 							required
 						></textarea>
+						<label for="message" class="color-accent-a">Message</label>
 					</div>
 					<button
 						id="formSubmitButton"
 						type="submit"
-						class="btn bg-accent-e color-accent-c btn-lg"
+						class="btn bg-accent-e color-accent-c"
 					>
 						Send Message
 					</button>

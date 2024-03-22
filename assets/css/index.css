@@ -161,8 +161,14 @@ a.copyText:hover {
 	background-color: var(--color-main);
 }
 
+.bg-accent-a {
+	background-color: var(--color-accent-a);
+}
 .bg-accent-b {
 	background-color: var(--color-accent-b);
+}
+.bg-accent-c {
+	background-color: var(--color-accent-c);
 }
 .bg-accent-d {
 	background-color: var(--color-accent-d);

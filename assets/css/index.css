@@ -377,6 +377,10 @@ input:checked + .slider:before {
 	#pricing > button {
 		margin-top: 1rem;
 	}
+	section ul li {
+		font-size: 0.9em;
+		margin: 0.5em;
+	}
 }
 
 /*** animations ***/

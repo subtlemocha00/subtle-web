@@ -23,14 +23,6 @@ body.darkMode {
 	background-color: var(--color-accent-d-dark);
 }
 
-/* .nav-link.darkMode {
-	color: var(--color-accent-c);
-}
-
-.nav-link.darkMode:hover {
-	color: var(--color-accent-d);
-} */
-
 .overlay.darkMode {
 	background-color: rgba(
 		var(--overlay-color-value-dark),

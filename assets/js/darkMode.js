@@ -15,6 +15,7 @@ const toggleDarkMode = () => {
 	const overlay = document.querySelector(".overlay");
 	const footer = document.querySelector("#footer");
 	const scrollUpButton = document.querySelector("#scrollUpButton");
+	const blogListItems = document.querySelectorAll("article section ul > li");
 
 	document.body.classList.toggle("darkMode");
 	if (titleText) titleText.classList.toggle("darkMode");
@@ -34,4 +35,6 @@ const toggleDarkMode = () => {
 		archiveCards.forEach((element) => element.classList.toggle("darkMode"));
 	if (priceCards)
 		priceCards.forEach((element) => element.classList.toggle("darkMode"));
+	if (blogListItems)
+		blogListItems.forEach((element) => element.classList.toggle("darkMode"));
 };

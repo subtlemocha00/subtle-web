@@ -374,12 +374,16 @@ input:checked + .slider:before {
 		transform: scale(120%);
 		z-index: 9;
 	}
-	#pricing > button {
-		margin-top: 1rem;
-	}
 	section ul li {
-		font-size: 0.9em;
+		/* font-size: 0.9em; */
 		margin: 0.5em;
+	}
+}
+
+@media (min-width: 424px) {
+	.text-sm-justify {
+		text-align: justify;
+		text-justify: inter-word;
 	}
 }
 

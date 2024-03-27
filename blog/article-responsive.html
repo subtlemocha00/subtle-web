@@ -205,12 +205,14 @@ body {
 							units. This ensures that your site's elements will adjust their
 							size relative to the screen size.
 						</p>
+
+						<p class="p-1 pb-0 copyText text-sm-justify"></p>
 						<pre class="col-12"><code class="language-js">.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-    
+							width: 100%;
+							max-width: 1200px;
+							margin: 0 auto;
+						}
+						
 .column {
     float: left;
     width: 50%;
@@ -222,7 +224,12 @@ body {
     clear: both;
     display: table;
 }</code></pre>
-						<ul class="copyText list-group list-group-flush text-break">
+						<p class="p-1 pb-0 copyText text-sm-justify">
+							This CSS creates a fluid two-column layout that adapts to the
+							width of the container, ensuring content is readable and navigable
+							on any device.
+						</p>
+						<!-- <ul class="copyText list-group list-group-flush text-break">
 							<li class="list-group-item bg-accent-c text-sm-justify">
 								<b>Use Semantic HTML:</b> Proper use of HTML tags (like
 								<b>&lt;h1&gt;</b>, <b>&lt;h2&gt;</b>, and <b>&lt;p&gt;</b>)
@@ -243,7 +250,7 @@ body {
 								infinitely more telling than
 								www.subtlewebstudios.com/article123.
 							</li>
-						</ul>
+						</ul> -->
 						<figure class="container p-3">
 							<img
 								class="figure-img rounded mt-2"
@@ -256,55 +263,27 @@ body {
 						</figure>
 					</section>
 					<section class="container px-4">
-						<h2 class="sectionTitle fs-2 text-center mt-4">
-							Keywords: Knowing What Your Audience is Searching For
-						</h2>
-						<p class="p-1 pb-0 copyText text-sm-justify">
-							In the vast landscape of digital marketing, keywords act as the
-							compass that guides your potential customers to your online
-							doorstep. These critical phrases and terms, which users enter into
-							search engines, are not just indicators of what people are looking
-							for; they're insights into their needs, preferences, and
-							behaviors. By identifying and understanding these keywords, you're
-							equipped to refine your site's content, making it more relevant
-							and visible to those who are searching for the solutions you
-							provide.
-						</p>
-						<div class="row justify-content-center align-items-center">
+						<h2 class="sectionTitle fs-2 text-center mt-4">Fluid Layouts</h2>
+						<div
+							class="container row justify-content-center align-items-center"
+						>
+							<div class="d-none d-md-block col-md-5">
+								<p class="p-1 pb-0 copyText text-sm-justify">
+									Flexible images ensure that images on your site are flexible
+									and can resize within their containers to avoid distortion or
+									overflow on smaller screens.
+								</p>
+							</div>
 							<ul
 								class="col-md-7 copyText list-group list-group-flush text-break text-center p-1"
 							>
-								<li class="list-group-item bg-accent-c text-sm-justify">
-									<b>Do Your Research:</b> Tools like Google Keyword Planner or
-									SEMrush can help you discover which keywords are most relevant
-									to your business.
-								</li>
-								<li class="list-group-item bg-accent-c text-sm-justify">
-									<b>Be Natural:</b> Integrate keywords smoothly into your
-									content, titles, and meta descriptions. Keyword stuffing, or
-									overusing keywords, can penalize your ranking.
-								</li>
-								<li class="list-group-item bg-accent-c text-sm-justify">
-									<b>Regular Check-ins:</b> New trends and search terms pop up
-									all the time so monitor how your chosen keywords are doing and
-									update your strategy to keep your site fresh and visible.
-								</li>
-								<li class="list-group-item bg-accent-c text-sm-justify">
-									<b>Localise Your Keywords:</b> Location-based keywords helps
-									attract customers in your area, making your business more
-									relevant and visible to those searching for local solutions.
-								</li>
+								<!-- <li class="list-group-item bg-accent-c text-sm-justify"> -->
+								<pre class="col-12"><code class="language-js">img {
+	max-width: 100%;
+	height: auto;
+}</code></pre>
+								<!-- </li> -->
 							</ul>
-							<figure class="d-none d-md-block col-md-4">
-								<img
-									class="figure-img rounded"
-									src="../assets/images/search_box_b.webp"
-								/>
-								<figcaption class="figure-caption text-center copyText">
-									Proper structuring helps Google's bots crawl and index your
-									site.
-								</figcaption>
-							</figure>
 						</div>
 					</section>
 					<section class="container px-4">

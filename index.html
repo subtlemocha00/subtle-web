@@ -7,11 +7,15 @@
 		<title>HOME | Subtle Web Studios - Web Development Services</title>
 		<link rel="icon" href="./assets/icons/logo_fav.svg" type="image/x-icon" />
 		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<!-- <noscript
+			><link rel="stylesheet" href="./assets/css/bootstrap.min.css"
+		/></noscript> -->
 		<link rel="stylesheet" href="./assets/css/index.css" />
 		<link rel="stylesheet" href="./assets/css/indexDark.css" />
 		<script
 			src="https://kit.fontawesome.com/56b718db2c.js"
 			crossorigin="anonymous"
+			defer
 		></script>
 
 		<!-- Google Analytics -->
@@ -365,11 +369,14 @@
 					digital reality.
 				</p>
 				<form
+					id="contact-form"
 					class="d-flex flex-column align-items-center justify-content-center"
 				>
 					<div class="mb-3 w-100 form-floating">
+						<input type="hidden" name="contact_number" value="697483" />
 						<input
 							id="name"
+							name="user_name"
 							type="text"
 							class="form-control"
 							placeholder="Name"
@@ -381,6 +388,7 @@
 					<div class="mb-3 w-100 form-floating">
 						<input
 							id="email"
+							name="user_email"
 							type="email"
 							class="form-control"
 							placeholder="Email"
@@ -390,19 +398,9 @@
 						<label for="email" class="color-accent-a">Email</label>
 					</div>
 					<div class="mb-3 w-100 form-floating">
-						<input
-							id="tel"
-							type="tel"
-							class="form-control"
-							placeholder="Phone Number"
-							autocomplete="tel-national"
-							required
-						/>
-						<label for="tel" class="color-accent-a">Phone Number</label>
-					</div>
-					<div class="mb-3 w-100 form-floating">
 						<textarea
 							id="message"
+							name="message"
 							class="form-control"
 							placeholder="Message"
 							rows="3"
@@ -410,13 +408,12 @@
 						></textarea>
 						<label for="message" class="color-accent-a">Message</label>
 					</div>
-					<button
+					<input
 						id="formSubmitButton"
 						type="submit"
+						value="Send"
 						class="btn bg-accent-e color-accent-c"
-					>
-						Send Message
-					</button>
+					/>
 				</form>
 			</div>
 		</section>
@@ -440,7 +437,6 @@
 			src="./assets/js/bootstrap.min.js"
 			crossorigin="anonymous"
 			defer
-			async
 		></script>
 		<script src="./assets/js/navbar.js" crossorigin="anonymous" defer></script>
 		<script
@@ -453,5 +449,35 @@
 			crossorigin="anonymous"
 			defer
 		></script>
+		<!-- EmailJS -->
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init({
+					publicKey: "zqg2gRZmlUsjWmgbG",
+				});
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function () {
+				document
+					.getElementById("contact-form")
+					.addEventListener("submit", function (event) {
+						event.preventDefault();
+						// these IDs from the previous steps
+						emailjs.sendForm("service_0fkn6zo", "contact_form", this).then(
+							() => {
+								console.log("SUCCESS!");
+							},
+							(error) => {
+								console.log("FAILED...", error);
+							}
+						);
+					});
+			};
+		</script>
 	</body>
 </html>

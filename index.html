@@ -1,483 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preload" as="image" href="./assets/images/desktop_a-m.webp" />
-		<title>HOME | Subtle Web Studios - Web Development Services</title>
-		<link rel="icon" href="./assets/icons/logo_fav.svg" type="image/x-icon" />
-		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-		<!-- <noscript
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preload" as="image" href="./assets/images/desktop_a-m.webp" />
+	<title>HOME | Subtle Web Studios - Web Development Services</title>
+	<link rel="icon" href="./assets/icons/logo_fav.svg" type="image/x-icon" />
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+	<!-- <noscript
 			><link rel="stylesheet" href="./assets/css/bootstrap.min.css"
 		/></noscript> -->
-		<link rel="stylesheet" href="./assets/css/index.css" />
-		<link rel="stylesheet" href="./assets/css/indexDark.css" />
-		<script
-			src="https://kit.fontawesome.com/56b718db2c.js"
-			crossorigin="anonymous"
-			defer
-		></script>
-	</head>
-	<!-- Google tag (gtag.js) -->
-	<script
-		async
-		src="https://www.googletagmanager.com/gtag/js?id=G-T6YJZ8V19N"
-	></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
+	<link rel="stylesheet" href="./assets/css/index.css" />
+	<link rel="stylesheet" href="./assets/css/indexDark.css" />
+	<script src="https://kit.fontawesome.com/56b718db2c.js" crossorigin="anonymous" defer></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YJZ8V19N"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag("js", new Date());
 
-		gtag("config", "G-T6YJZ8V19N");
-	</script>
-	<body>
-		<!-- IMPLEMENT SCROLLSPY FOR NAVBAR AS USER SCROLLS -->
-		<nav
-			id="navParent"
-			class="fixed-top navbar navbar-expand-lg bg-transparent"
-		>
-			<div id="navContainer" class="container-fluid">
-				<a href="#" class="navbar-brand">
-					<img
-						src="./assets/icons/subtle_web_logo_d.svg"
-						alt="Subtle Web Studios Logo"
-						style="
+	gtag("config", "G-T6YJZ8V19N");
+</script>
+
+<body>
+	<!-- IMPLEMENT SCROLLSPY FOR NAVBAR AS USER SCROLLS -->
+	<nav id="navParent" class="fixed-top navbar navbar-expand-lg bg-transparent">
+		<div id="navContainer" class="container-fluid">
+			<a href="#" class="navbar-brand">
+				<img src="./assets/icons/subtle_web_logo_d.svg" alt="Subtle Web Studios Logo" style="
 							filter: invert(100%) sepia(0%) saturate(1459%) hue-rotate(14deg)
 								brightness(115%) contrast(100%);
-						"
-					/>
-				</a>
-				<div class="d-lg-flex align-items-center">
-					<label class="switch">
-						<input id="toggleSwitch" type="checkbox" />
-						<span class="slider round"></span>
-					</label>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<i class="fas fa-bars color-accent-e"></i>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav ms-auto text-end">
-							<li class="nav-item">
-								<a
-									class="nav-link color-accent-c active"
-									href="#landing"
-									aria-current="true"
-									>Home</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#sectionA">Services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#sectionB">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="./blog.html">Blog</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#sectionD">Pricing</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#sectionE">Contact</a>
-							</li>
-						</ul>
-					</div>
+						" />
+			</a>
+			<div class="d-lg-flex align-items-center">
+				<label class="switch">
+					<input id="toggleSwitch" type="checkbox" />
+					<span class="slider round"></span>
+				</label>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars color-e"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto text-end">
+						<li class="nav-item">
+							<a class="nav-link color-c active" href="#landing" aria-current="true">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-c" href="#sectionA">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-c" href="#sectionB">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-c" href="./blog.html">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-c" href="#sectionD">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-c" href="#sectionE">Contact</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</nav>
-		<header
-			id="landing"
-			class="d-flex flex-column align-items-center justify-content-center"
-		>
-			<span id="welcome" class="titleText text-center p-2">
-				SUBTLE WEB STUDIOS
-			</span>
-			<a class="" href="#contact">
-				<button type="button" class="btn bg-accent-e color-accent-c">
-					Contact Us
+		</div>
+	</nav>
+	<header id="landing" class="d-flex flex-column align-items-center justify-content-center">
+		<span id="welcome" class="titleText text-center p-2">
+			SUBTLE WEB STUDIOS
+		</span>
+		<a class="" href="#contact">
+			<button type="button" class="btn bg-e color-c">
+				Contact Us
+			</button>
+		</a>
+		<div id="overlay" class="overlay"></div>
+		<picture class="landingBackground">
+			<source srcset="./assets/images/desktop_a.webp" media="(min-width: 600px)" />
+			<img src="./assets/images/desktop_a-m.webp" alt="desktop background" />
+		</picture>
+	</header>
+	<section id="services" class="d-flex flex-column align-items-center justify-content-center">
+		<div id="sectionA" style="height: 3.25rem"></div>
+		<h2 class="sectionTitle fs-1 text-center">SERVICES</h2>
+		<p class="text-center p-2 mx-md-5 px-md-5 copyText">
+			We deliver handcrafted web development solutions for businesses of all
+			sizes, with a special focus on crafting user-centric websites that drive
+			engagement and growth.
+		</p>
+		<p class="text-center p-2 mx-md-5 px-md-5 copyText">
+			Operating from Sarnia, Ontario, Canada, we pride ourselves on our
+			meticulous attention to detail, guaranteeing optimal site performance
+			and seamless user experience. Let us transform your digital presence to
+			not only attract more visitors but also significantly boost your
+			revenue.
+		</p>
+		<ul class="container row">
+			<li class="card card-body align-items-center text-center col-auto col-lg-3 m-2 col-sm-5 m-lg-2">
+				<div class="icon-circle">
+					<i class="card-img-top fas fa-mobile-screen"></i>
+				</div>
+				<h5 class="card-title">Fully Responsive</h5>
+				<p class="card-text copyText">
+					We'll build your website to have a fully responsive design, meaning
+					it'll look great on phones, tablets and PCs.
+				</p>
+			</li>
+			<li class="card card-body align-items-center text-center col-auto col-lg-3 m-2 col-sm-5 m-lg-2">
+				<div class="icon-circle">
+					<i class="card-img-top fas fa-gauge-high"></i>
+				</div>
+				<h5 class="card-title">Optimized</h5>
+				<p class="card-text copyText">
+					Enjoy lightning fast load times on your site for the smoothest, most
+					reliable user experience possible.
+				</p>
+			</li>
+			<li class="card card-body align-items-center text-center col-auto col-lg-3 m-2 col-sm-5 m-lg-2">
+				<div class="icon-circle">
+					<i class="card-img-top fas fa-fingerprint"></i>
+				</div>
+				<h5 class="card-title">Customized</h5>
+				<p class="card-text copyText">
+					Stand out to clients with a site that is uniquely customized and
+					hand-coded for your business.
+				</p>
+			</li>
+		</ul>
+	</section>
+	<section id="about" class="d-flex flex-column align-items-center justify-content-center">
+		<div id="sectionB" style="height: 3.25rem"></div>
+		<h2 class="sectionTitle fs-1 text-center">ABOUT</h2>
+		<p class="text-center px-2 mx-md-5 px-md-5 copyText">
+			My name is Kevin, the founder of Subtle Web Studios. My journey into web
+			development was sparked by a passion for technology and an
+			entrepreneurial spirit, aiming to merge innovative design with
+			functional solutions. Driven by the challenge of creating impactful
+			online experiences, I immersed myself in learning the art and science of
+			web development. Through dedication and a self-taught regimen, I've
+			mastered the craft of designing websites that stand out for their
+			aesthetics and usability.
+		</p>
+		<p class="text-center px-2 mx-md-5 px-md-5 copyText">
+			At Subtle Web Studios, we're not just about building websites; we're
+			about building the future of your business on the web. Every project is a new
+			opportunity to help our clients achieve their digital ambitions,
+			providing bespoke solutions that elevate their online presence.
+		</p>
+	</section>
+	<section id="blog" class="d-flex flex-column align-items-center justify-content-center">
+		<div id="sectionC" style="height: 3.25rem"></div>
+		<h2 class="sectionTitle fs-1 text-center">OUR BLOG</h2>
+		<p class="text-center px-2 mx-md-5 px-md-5 copyText">
+			We deliver bespoke web development solutions for businesses of all
+			sizes, with a special focus on crafting user-centric websites that drive
+			engagement and growth.
+		</p>
+		<ul class="container row">
+			<li class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2">
+				<img src="./assets/images/responsive_c.webp" alt="blog pic 1" class="image card-img-top mb-2" />
+				<h5 class="card-title">Why Responsive Websites Are Vital</h5>
+				<p class="card-text copyText">
+					Learn how having a responsive website improves the user experience
+					and drives client retention.
+				</p>
+				<a href="./blog/article-responsive.html" class="btn btn-sm bg-e text-white">
+					Read More
+				</a>
+			</li>
+			<li class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2">
+				<img src="./assets/images/seo_b.webp" alt="blog pic 2" class="card-img-top mb-2" />
+				<h5 class="card-title">Search Engine Optimization</h5>
+				<p class="card-text copyText">
+					Unlock the secrets of Search Engine Optimization: Elevating Your
+					website's visibility and driving business growth.
+				</p>
+				<a href="./blog/article-seo.html" class="btn btn-sm bg-e text-white">
+					Read More
+				</a>
+			</li>
+			<li class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2">
+				<img src="./assets/images/wide_code_a.webp" alt="blog pic 3" class="card-img-top mb-2" />
+				<h5 class="card-title">Hand-coded Websites or CMS?</h5>
+				<p class="card-text copyText">
+					Choosing the Right Type of Website To Grow Your Business and Convert
+					Your Visitors Into Customers.
+				</p>
+				<button type="button" class="btn btn-sm bg-e text-white">
+					Read More
 				</button>
-			</a>
-			<div id="overlay" class="overlay"></div>
-			<picture class="landingBackground"
-				><source
-					srcset="./assets/images/desktop_a.webp"
-					media="(min-width: 600px)" />
-				<img src="./assets/images/desktop_a-m.webp" alt="desktop background"
-			/></picture>
-		</header>
-		<section
-			id="services"
-			class="d-flex flex-column align-items-center justify-content-center"
-		>
-			<div id="sectionA" style="height: 3.25rem"></div>
-			<h2 class="sectionTitle fs-1 text-center">SERVICES</h2>
-			<p class="text-center p-2 mx-md-5 px-md-5 copyText">
-				We deliver bespoke web development solutions for businesses of all
-				sizes, with a special focus on crafting user-centric websites that drive
-				engagement and growth.
-			</p>
-			<p class="text-center p-2 mx-md-5 px-md-5 copyText">
-				Operating from Sarnia, Ontario, Canada, we pride ourselves on our
-				meticulous attention to detail, guaranteeing optimal site performance
-				and seamless user experience. Let us transform your digital presence to
-				not only attract more visitors but also significantly boost your
-				revenue.
-			</p>
-			<ul class="container row">
-				<li
-					class="card card-body align-items-center text-center col-auto col-lg-3 m-2 col-sm-5 m-lg-2"
-				>
-					<div class="icon-circle">
-						<i class="card-img-top fas fa-mobile-screen"></i>
-					</div>
-					<h5 class="card-title">Fully Responsive</h5>
-					<p class="card-text copyText">
-						We'll build your website to have a fully responsive design, meaning
-						it'll look great on phones, tablets and PCs.
-					</p>
-				</li>
-				<li
-					class="card card-body align-items-center text-center col-auto col-lg-3 m-2 col-sm-5 m-lg-2"
-				>
-					<div class="icon-circle">
-						<i class="card-img-top fas fa-gauge-high"></i>
-					</div>
-					<h5 class="card-title">Optimized</h5>
-					<p class="card-text copyText">
-						Enjoy lightning fast load times on your site for the smoothest, most
-						reliable user experience possible.
-					</p>
-				</li>
-				<li
-					class="card card-body align-items-center text-center col-auto col-lg-3 m-2 col-sm-5 m-lg-2"
-				>
-					<div class="icon-circle">
-						<i class="card-img-top fas fa-fingerprint"></i>
-					</div>
-					<h5 class="card-title">Customized</h5>
-					<p class="card-text copyText">
-						Stand out to clients with a site that is uniquely customized and
-						hand-coded for your business.
-					</p>
-				</li>
-			</ul>
-		</section>
-		<section
-			id="about"
-			class="d-flex flex-column align-items-center justify-content-center"
-		>
-			<div id="sectionB" style="height: 3.25rem"></div>
-			<h2 class="sectionTitle fs-1 text-center">ABOUT</h2>
-			<p class="text-center px-2 mx-md-5 px-md-5 copyText">
-				My name is Kevin, the founder of Subtle Web Studios. My journey into web
-				development was sparked by a passion for technology and an
-				entrepreneurial spirit, aiming to merge innovative design with
-				functional solutions. Driven by the challenge of creating impactful
-				online experiences, I immersed myself in learning the art and science of
-				web development. Through dedication and a self-taught regimen, I've
-				mastered the craft of designing websites that stand out for their
-				aesthetics and usability.
-			</p>
-			<p class="text-center px-2 mx-md-5 px-md-5 copyText">
-				At Subtle Web Studios, we're not just about building websites; we're
-				about building your business's future on the web. Every project is a new
-				opportunity to help our clients achieve their digital ambitions,
-				providing bespoke solutions that elevate their online presence.
-			</p>
-		</section>
-		<section
-			id="blog"
-			class="d-flex flex-column align-items-center justify-content-center"
-		>
-			<div id="sectionC" style="height: 3.25rem"></div>
-			<h2 class="sectionTitle fs-1 text-center">OUR BLOG</h2>
-			<p class="text-center px-2 mx-md-5 px-md-5 copyText">
-				We deliver bespoke web development solutions for businesses of all
-				sizes, with a special focus on crafting user-centric websites that drive
-				engagement and growth.
-			</p>
-			<p class="text-center px-2 mx-md-5 px-md-5 copyText">
-				Operating Canada-wide, we pride ourselves on our meticulous attention to
-				detail, guaranteeing optimal site performance and seamless user
-				experience. Let us transform your digital presence to not only attract
-				more visitors but also significantly boost your revenue.
-			</p>
-			<ul class="container row">
-				<li
-					class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2"
-				>
-					<img
-						src="./assets/images/desktop_scene.webp"
-						alt="blog pic 1"
-						class="image card-img-top mb-2"
-					/>
-					<h5 class="card-title">Why Responsive Websites Are Vital</h5>
-					<p class="card-text copyText">
-						Learn how having a responsive website improves the user experience
-						and drives client retention.
-					</p>
-					<button type="button" class="btn btn-sm bg-accent-e text-white">
-						Read More
-					</button>
-				</li>
-				<li
-					class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2"
-				>
-					<img
-						src="./assets/images/seo_b.webp"
-						alt="blog pic 2"
-						class="card-img-top mb-2"
-					/>
-					<h5 class="card-title">Search Engine Optimization</h5>
-					<p class="card-text copyText">
-						Unlock the secrets of Search Engine Optimization: Elevating Your
-						website's visibility and driving business growth.
-					</p>
-					<button type="button" class="btn btn-sm bg-accent-e text-white">
-						Read More
-					</button>
-				</li>
-				<li
-					class="card card-body align-items-center text-center col-auto col-sm-6 col-lg-3 m-2"
-				>
-					<img
-						src="./assets/images/wide_code_a.webp"
-						alt="blog pic 3"
-						class="card-img-top mb-2"
-					/>
-					<h5 class="card-title">Hand-coded Websites or CMS?</h5>
-					<p class="card-text copyText">
-						Choosing the Right Type of Website To Grow Your Business and Convert
-						Your Visitors Into Customers.
-					</p>
-					<button type="button" class="btn btn-sm bg-accent-e text-white">
-						Read More
-					</button>
-				</li>
-			</ul>
-			<a class="copyText" href="./blog.html">See All Blog Articles</a>
-		</section>
-		<section
-			id="pricing"
-			class="d-flex flex-column align-items-center justify-content-center"
-		>
-			<div id="sectionD" style="height: 3.25rem"></div>
-			<h2 class="sectionTitle fs-1 text-center mb-lg-5">PRICING</h2>
-			<ul class="container container-fluid row justify-content-center">
-				<li
-					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 boxShadow"
-				>
-					<h5 class="card-title list-group-item p-2 m-0 bg-accent-d">
-						Lump Sum
-					</h5>
-					<div class="card-subtitle p-2 list-item bg-accent-d">
-						One-Time Payment
-					</div>
-					<ul class="list-group list-group-flush text-start copyText">
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> Custom Design &
-							Development
-						</li>
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> SEO Foundation
-							Setup
-						</li>
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> Complete Ownership
-						</li>
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> 30 Days Post-Launch
-							Support
-						</li>
-					</ul>
-				</li>
-				<li
-					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 boxShadow"
-				>
-					<h5 class="card-title list-group-item p-2 m-0 bg-accent-d">
-						Standard
-					</h5>
-					<div class="card-subtitle p-2 list-item bg-accent-d">
-						$0 Down, $150/Month
-					</div>
-					<ul class="list-group list-group-flush text-start copyText">
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> Hosting Included
-						</li>
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> Unlimited Edits
-						</li>
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> Lifetime Updates
-						</li>
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> 24/7 Customer
-							Service
-						</li>
-					</ul>
-				</li>
-				<li
-					class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 boxShadow"
-				>
-					<h5 class="card-title list-group-item p-2 m-0 bg-accent-d">
-						Other Services
-					</h5>
-					<div class="card-subtitle p-2 list-item bg-accent-d">
-						Contact Us For Details
-					</div>
-					<ul class="list-group list-group-flush text-start copyText">
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> Logo &#38; Graphic
-							Design
-						</li>
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> Speed Optimization
-						</li>
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> Website Updates
-						</li>
-						<li class="list-group-item">
-							<i class="fa-regular fa-hand-point-right"></i> E-commerce
-							Integration
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-		<section
-			id="contact"
-			class="d-flex flex-column align-items-center justify-content-center"
-		>
-			<div id="sectionE" style="height: 3.25rem"></div>
-			<div
-				id="contactFormContainer"
-				class="bg-accent-d color-accent-c p-3 boxShadow rounded mx-2 mb-4"
-			>
-				<h2 class="sectionTitle fs-1 color-accent-e text-center">CONTACT US</h2>
+			</li>
+		</ul>
+		<a class="copyText" href="./blog.html">See All Blog Articles</a>
+	</section>
+	<section id="pricing" class="d-flex flex-column align-items-center justify-content-center">
+		<div id="sectionD" style="height: 3.25rem"></div>
+		<h2 class="sectionTitle fs-1 text-center mb-lg-5">PRICING</h2>
+		<ul class="container container-fluid row justify-content-center">
+			<li class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 boxShadow">
+				<h5 class="card-title list-group-item p-2 m-0 bg-c">
+					Lump Sum
+				</h5>
+				<div class="card-subtitle p-2 list-item bg-c">
+					One-Time Payment
+				</div>
+				<ul class="list-group list-group-flush text-start copyText">
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> Custom Design &
+						Development
+					</li>
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> SEO Foundation
+						Setup
+					</li>
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> Complete Ownership
+					</li>
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> 30 Days Post-Launch
+						Support
+					</li>
+				</ul>
+			</li>
+			<li class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 boxShadow">
+				<h5 class="card-title list-group-item p-2 m-0 bg-c">
+					Standard
+				</h5>
+				<div class="card-subtitle p-2 list-item bg-c color-b">
+					$0 Down, $150/Month
+				</div>
+				<ul class="list-group list-group-flush text-start copyText">
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> Hosting Included
+					</li>
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> Unlimited Edits
+					</li>
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> Lifetime Updates
+					</li>
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> 24/7 Customer
+						Service
+					</li>
+				</ul>
+			</li>
+			<li class="card card-body text-center col-auto col-sm-6 col-lg-3 m-2 p-0 border-0 boxShadow">
+				<h5 class="card-title list-group-item p-2 m-0 bg-c">
+					Other Services
+				</h5>
+				<div class="card-subtitle p-2 list-item bg-c">
+					Contact Us For Details
+				</div>
+				<ul class="list-group list-group-flush text-start copyText">
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> Logo &#38; Graphic
+						Design
+					</li>
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> Speed Optimization
+					</li>
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> Website Updates
+					</li>
+					<li class="list-group-item">
+						<i class="fa-regular fa-hand-point-right"></i> E-commerce
+						Integration
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section id="contact" class="d-flex flex-column align-items-center justify-content-center">
+		<div id="sectionE" style="height: 3.25rem"></div>
+		<div id="contactFormContainer" class="bg-c color-c p-3 boxShadow rounded mx-2 mb-4">
+			<form id="contact-form" class="d-flex flex-column align-items-center justify-content-center">
+				<h1 class="color-e text-center">CONTACT US</h1>
 				<p class="m-3 text-center">
 					Got a project in mind? Let&#39;s chat about turning your ideas into
 					digital reality.
 				</p>
-				<form
-					id="contact-form"
-					class="d-flex flex-column align-items-center justify-content-center"
-				>
-					<div class="mb-3 w-100 form-floating">
-						<input type="hidden" name="contact_number" value="697483" />
-						<input
-							id="name"
-							name="user_name"
-							type="text"
-							class="form-control"
-							placeholder="Name"
-							autocomplete="name"
-							required
-						/>
-						<label for="name" class="color-accent-a">Name</label>
-					</div>
-					<div class="mb-3 w-100 form-floating">
-						<input
-							id="email"
-							name="user_email"
-							type="email"
-							class="form-control"
-							placeholder="Email"
-							autocomplete="email"
-							required
-						/>
-						<label for="email" class="color-accent-a">Email</label>
-					</div>
-					<div class="mb-3 w-100 form-floating">
-						<textarea
-							id="message"
-							name="message"
-							class="form-control"
-							placeholder="Message"
-							rows="3"
-							required
-						></textarea>
-						<label for="message" class="color-accent-a">Message</label>
-					</div>
-					<input
-						id="formSubmitButton"
-						type="submit"
-						value="Send"
-						class="btn bg-accent-e color-accent-c"
-					/>
-				</form>
-			</div>
-		</section>
-		<footer id="footer" class="footer text-center mb-5">
-			<p>
-				If you prefer, you can also email us directly at
-				<a
-					href="mailto:yourcompanyemail@example.com?subject=Inquiry from the Website&body=Hi there,"
-					><script>
-						document.write("inquiries" + "@" + "subtlewebstudios.com");
-					</script></a
-				>
-			</p>
-			<p>Hand-Crafted by Subtle Web Studios 2024 &#169;</p>
-		</footer>
-		<a href="#top" id="scrollUpButton" class="btn boxShadow">
-			<i class="fas fa-arrow-up"></i>
-		</a>
-		<!-- JS Files -->
-		<script
-			src="./assets/js/bootstrap.min.js"
-			crossorigin="anonymous"
-			defer
-		></script>
-		<script src="./assets/js/navbar.js" crossorigin="anonymous" defer></script>
-		<script
-			src="./assets/js/animations.js"
-			crossorigin="anonymous"
-			defer
-		></script>
-		<script
-			src="./assets/js/darkMode.js"
-			crossorigin="anonymous"
-			defer
-		></script>
-		<!-- EmailJS -->
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-		></script>
-		<script type="text/javascript">
-			(function () {
-				emailjs.init({
-					publicKey: "zqg2gRZmlUsjWmgbG",
+				<div class="mb-3 w-100 form-floating">
+					<input type="hidden" name="contact_number" value="697483" />
+					<input id="name" name="user_name" type="text" class="form-control" placeholder="Name"
+						autocomplete="name" required />
+					<label for="name" class="color-b">Name</label>
+				</div>
+				<div class="mb-3 w-100 form-floating">
+					<input id="email" name="user_email" type="email" class="form-control" placeholder="Email"
+						autocomplete="email" required />
+					<label for="email" class="color-b">Email</label>
+				</div>
+				<div class="mb-3 w-100 form-floating">
+					<textarea id="message" name="message" class="form-control" placeholder="Message" rows="3"
+						required></textarea>
+					<label for="message" class="color-b">Message</label>
+				</div>
+				<input id="formSubmitButton" type="submit" value="Send" class="btn bg-e color-c" />
+			</form>
+		</div>
+	</section>
+	<footer id="footer" class="footer text-center mb-5">
+		<p>
+			If you prefer, you can also email us directly at
+			<a href="mailto:yourcompanyemail@example.com?subject=Inquiry from the Website&body=Hi there,">
+				<script>
+					document.write("inquiries" + "@" + "subtlewebstudios.com");
+				</script>
+			</a>
+		</p>
+		<p>Hand-Crafted by Subtle Web Studios 2024 &#169;</p>
+	</footer>
+	<a href="#top" id="scrollUpButton" class="btn boxShadow">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+	<!-- JS Files -->
+	<script src="./assets/js/bootstrap.min.js" crossorigin="anonymous" defer></script>
+	<script src="./assets/js/navbar.js" crossorigin="anonymous" defer></script>
+	<script src="./assets/js/animations.js" crossorigin="anonymous" defer></script>
+	<script src="./assets/js/darkMode.js" crossorigin="anonymous" defer></script>
+	<!-- EmailJS -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init({
+				publicKey: "zqg2gRZmlUsjWmgbG",
+			});
+		})();
+	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+			document
+				.getElementById("contact-form")
+				.addEventListener("submit", function (event) {
+					event.preventDefault();
+					// these IDs from the previous steps
+					emailjs.sendForm("service_0fkn6zo", "contact_form", this).then(
+						() => {
+							console.log("SUCCESS!");
+						},
+						(error) => {
+							console.log("FAILED...", error);
+						}
+					);
 				});
-			})();
-		</script>
-		<script type="text/javascript">
-			window.onload = function () {
-				document
-					.getElementById("contact-form")
-					.addEventListener("submit", function (event) {
-						event.preventDefault();
-						// these IDs from the previous steps
-						emailjs.sendForm("service_0fkn6zo", "contact_form", this).then(
-							() => {
-								console.log("SUCCESS!");
-							},
-							(error) => {
-								console.log("FAILED...", error);
-							}
-						);
-					});
-			};
-		</script>
-	</body>
+		};
+	</script>
+</body>
+
 </html>

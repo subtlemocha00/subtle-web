@@ -6,8 +6,10 @@ window.addEventListener("DOMContentLoaded", (e) => {
 const toggleDarkMode = () => {
 	const titleText = document.querySelector(".titleText");
 	const sectionTitle = document.querySelectorAll(".sectionTitle");
+	const contactTitle = document.querySelector("#contact-form > h1")
 	const copyText = document.querySelectorAll(".copyText");
 	const serviceCards = document.querySelectorAll("#services ul > li");
+	const serviceCardTitles = document.querySelectorAll("#services ul > li > h5");
 	const blogCards = document.querySelectorAll("#blog ul > li");
 	const archiveCards = document.querySelectorAll("#archive ul > li");
 	const priceCards = document.querySelectorAll("#pricing ul > li");
@@ -23,10 +25,13 @@ const toggleDarkMode = () => {
 	if (contactFormContainer) contactFormContainer.classList.toggle("darkMode");
 	if (footer) footer.classList.toggle("darkMode");
 	if (scrollUpButton) scrollUpButton.classList.toggle("darkMode");
+	if (contactTitle) contactTitle.classList.toggle("darkMode");
 	if (sectionTitle)
 		sectionTitle.forEach((element) => element.classList.toggle("darkMode"));
 	if (copyText)
 		copyText.forEach((element) => element.classList.toggle("darkMode"));
+	if (serviceCardTitles)
+		serviceCardTitles.forEach((element) => element.classList.toggle("darkMode"));
 	if (serviceCards)
 		serviceCards.forEach((element) => element.classList.toggle("darkMode"));
 	if (blogCards)

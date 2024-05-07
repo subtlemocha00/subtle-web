@@ -1,26 +1,21 @@
 :root {
 	/* DARK THEME */
-	--color-main-dark: #c97e36;
-	--color-text-dark: #f4f4f6;
-	--color-accent-a-dark: #707070;
-	--color-accent-b-dark: #98a9d1;
-	--color-accent-c-dark: #4b382a;
-	--color-accent-d-dark: #323a45;
-	--color-accent-g-dark: #c97e36;
+	--color-a-dark: #707070;
+	--color-b-dark: #133eee;
+	--color-c-dark: #113355;
+	--color-d-dark: #f4f4f6;
+	--color-e-dark: #fc8000;
 
 	--overlay-color-value-dark: 50, 58, 69;
 	--overlay-opacity-value-dark: 0.35;
 
 	/* shadows */
-	--box-shadow-dark: 0 4px 10px var(--color-text-dark);
-
-	/* --text-outline-dark: 2px 2px #f4f4f6, -2px 2px #f4f4f6, 2px -2px #f4f4f6,
-		-2px -2px #f4f4f6; */
+	--box-shadow-dark: 0 4px 10px var(--color-d-dark);
 	--text-outline-dark: 0;
 }
 
 body.darkMode {
-	background-color: var(--color-accent-d-dark);
+	background-color: var(--color-c-dark);
 }
 
 .overlay.darkMode {
@@ -31,31 +26,35 @@ body.darkMode {
 }
 
 .titleText.darkMode {
-	color: var(--color-main-dark);
-	text-shadow: var(--text-outline-dark);
+	color: var(--color-e-dark);
 }
 
 .sectionTitle.darkMode {
-	color: var(--color-text-dark);
+	color: var(--color-e-dark);
 }
 
 .copyText.darkMode {
-	color: var(--color-text-dark);
+	color: var(--color-d-dark);
+}
+
+#services ul li h5,
+#blog ul li h5 {
+	color: var(--color-e-dark);
 }
 
 .copyText.darkMode li i {
-	color: var(--color-accent-d-dark);
+	color: var(--color-c-dark);
 }
 
 .card.darkMode {
-	background-color: var(--color-accent-b-dark);
+	background-color: var(--color-b-dark);
 }
 .list-group-item.darkMode {
-	background-color: var(--color-accent-b-dark);
-	color: var(--color-accent-c);
+	background-color: var(--color-b-dark);
+	color: var(--color-c-dark);
 }
 .list-group.darkMode {
-	background-color: var(--color-accent-b-dark);
+	background-color: var(--color-b-dark);
 }
 
 .boxShadow.darkMode {
@@ -63,16 +62,16 @@ body.darkMode {
 }
 
 #contactFormContainer.darkMode {
-	background-color: var(--color-accent-b-dark);
+	background-color: var(--color-b-dark);
 }
-#contactFormContainer.darkMode > p {
-	color: var(--color-accent-d-dark);
+#contactFormContainer.darkMode > form p {
+	color: var(--color-c-dark);
+}
+
+#contact-form > h1.darkMode {
+	color: var(--color-c-dark);
 }
 
 .footer.darkMode {
-	color: var(--color-text-dark);
-}
-
-#scrollUpButton.darkMode {
-	color: var(--color-accent-d-dark);
+	color: var(--color-d-dark);
 }

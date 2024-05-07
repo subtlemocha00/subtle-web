@@ -1,535 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preload" as="image" href="../assets/images/desktop_a-m.webp" />
-		<title>Why Responsive Websites Are Vital | Subtle Web Studios</title>
-		<link rel="icon" href="../assets/icons/logo_fav.svg" type="image/x-icon" />
-		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../assets/css/index.css" />
-		<link rel="stylesheet" href="../assets/css/indexDark.css" />
-		<script
-			src="https://kit.fontawesome.com/56b718db2c.js"
-			crossorigin="anonymous"
-		></script>
-	</head>
-	<!-- Google tag (gtag.js) -->
-	<script
-		async
-		src="https://www.googletagmanager.com/gtag/js?id=G-T6YJZ8V19N"
-	></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
 
-		gtag("config", "G-T6YJZ8V19N");
-	</script>
-	<body>
-		<nav
-			id="navParent"
-			class="fixed-top navbar navbar-expand-lg bg-transparent"
-		>
-			<div id="navContainer" class="container-fluid">
-				<a href="../index.html" class="navbar-brand">
-					<img
-						src="../assets/icons/logo_fav.svg"
-						alt="Subtle Web Studios Logo"
-						style="
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preload" as="image" href="../assets/images/desktop_a-m.webp" />
+	<title>Why Responsive Websites Are Vital | Subtle Web Studios</title>
+	<link rel="icon" href="../assets/icons/logo_fav.svg" type="image/x-icon" />
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../assets/css/index.css" />
+	<link rel="stylesheet" href="../assets/css/indexDark.css" />
+	<script src="https://kit.fontawesome.com/56b718db2c.js" crossorigin="anonymous"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YJZ8V19N"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag("js", new Date());
+
+	gtag("config", "G-T6YJZ8V19N");
+</script>
+
+<body>
+	<nav id="navParent" class="fixed-top navbar navbar-expand-lg bg-transparent">
+		<div id="navContainer" class="container-fluid">
+			<a href="../index.html" class="navbar-brand">
+				<img src="../assets/icons/logo_fav.svg" alt="Subtle Web Studios Logo" style="
 							filter: invert(55%) sepia(85%) saturate(417%) hue-rotate(348deg)
 								brightness(86%) contrast(81%);
-						"
-					/>
-				</a>
-				<div class="d-lg-flex align-items-center">
-					<label class="switch">
-						<input id="toggleSwitch" type="checkbox" />
-						<span class="slider round"></span>
-					</label>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<i class="fas fa-bars color-accent-e"></i>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav ms-auto text-end">
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="../index.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#sectionA">Services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#sectionB">About</a>
-							</li>
-							<li class="nav-item active">
-								<a
-									class="nav-link color-accent-c"
-									href="../blog.html"
-									aria-current="true"
-									>Blog</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#sectionD">Pricing</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-accent-c" href="#sectionE">Contact</a>
-							</li>
-						</ul>
-					</div>
+						" />
+			</a>
+			<div class="d-lg-flex align-items-center">
+				<label class="switch">
+					<input id="toggleSwitch" type="checkbox" />
+					<span class="slider round"></span>
+				</label>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars color-e"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto text-end">
+						<li class="nav-item">
+							<a class="nav-link color-c" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-c" href="#sectionA">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-c" href="#sectionB">About</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link color-c" href="../blog.html" aria-current="true">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-c" href="#sectionD">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-c" href="#sectionE">Contact</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</nav>
-		<header
-			id="landing"
-			class="blog d-flex flex-column align-items-center justify-content-center"
-		>
-			<div id="overlay" class="overlay blog"></div>
-			<picture class="landingBackground blog"
-				><source
-					srcset="../assets/images/desktop_a.webp"
-					media="(min-width: 600px)" />
-				<img src="../assets/images/desktop_a-m.webp" alt="desktop background"
-			/></picture>
-		</header>
-		<!-- BLOG CONTENT GOES HERE -->
-		<main class="mt-3">
-			<article id="articleContainer" class="container">
-				<section class="container px-4">
-					<h1 class="sectionTitle fs-1 text-center">
-						Demystifying SEO: A Small Business Owner's Guide to Climbing the
-						Search Rankings
-					</h1>
-					<figure class="mt-4 px-md-5">
-						<img
-							class="figure-img rounded w-100"
-							src="../assets/images/seo_b.webp"
-							alt="search engine optimization"
-						/>
-						<figcaption class="figure-caption text-center copyText">
-							Nearing the top of Google's search results ensures clients find
-							your business first.
-						</figcaption>
-					</figure>
-				</section>
-				<section class="container px-4">
-					<p class="p-1 copyText">
-						In the digital age, your website acts as your storefront, business
-						card, and first impression—all rolled into one. But what good is a
-						stunning website if it's hidden away on the second page of Google
-						search results, where seldom a soul ventures? Enter the hero of our
-						story: Search Engine Optimization, or SEO.
-					</p>
-					<p class="p-1 copyText">
-						Just as building a website with a mobile-first and responsive design
-						is crucial for user experience and Google rankings, mastering the
-						basics of SEO is essential for getting your site seen by the right
-						people. This article is for small business owners looking to unravel
-						the mystery of SEO and give their websites a fighting chance in the
-						competitive arena of search engines. So, let's dive in!
-					</p>
-				</section>
-				<section class="container px-4">
-					<h2 class="sectionTitle fs-2 text-center mt-4">
-						Starting With SEO Basics
-					</h2>
-					<p class="p-1 copyText">
-						Before we talk strategy, let's get the basics down. SEO is the
-						practice of optimizing your website to increase its visibility when
-						people search for products or services related to your business in
-						Google, Bing, and other search engines. The higher your pages rank
-						in search results, the more likely you are to catch the attention of
-						prospective customers.
-					</p>
-					<p class="p-1 copyText">
-						Understanding how search engines work is key. They crawl your site,
-						indexing content to serve up as answers to users' queries. Your goal
-						is to make their job easy by clearly indicating what your content is
-						about and why it's valuable.
-					</p>
-				</section>
-				<section class="container px-4">
-					<h2 class="sectionTitle fs-2 text-center mt-4">
-						Structuring Your Site for Search Engines
-					</h2>
-					<p class="p-1 pb-0 copyText">
-						Think of your website's structure as the foundation of your SEO
-						strategy. Just as we build websites with mobile-first design, we
-						should also design with SEO in mind from the get-go. Here&#39;s how:
-					</p>
-					<ul class="copyText list-group list-group-flush text-break">
+		</div>
+	</nav>
+	<header id="landing" class="blog d-flex flex-column align-items-center justify-content-center">
+		<div id="overlay" class="overlay blog"></div>
+		<picture class="landingBackground blog">
+			<source srcset="../assets/images/desktop_a.webp" media="(min-width: 600px)" />
+			<img src="../assets/images/desktop_a-m.webp" alt="desktop background" />
+		</picture>
+	</header>
+	<!-- BLOG CONTENT GOES HERE -->
+	<main class="mt-3">
+		<article id="articleContainer" class="container">
+			<section class="container px-4">
+				<h1 class="sectionTitle fs-1 text-center">
+					Demystifying SEO: A Small Business Owner's Guide to Climbing the
+					Search Rankings
+				</h1>
+				<figure class="mt-4 px-md-5">
+					<img class="figure-img rounded w-100" src="../assets/images/seo_b.webp"
+						alt="search engine optimization" />
+					<figcaption class="figure-caption text-center copyText">
+						Nearing the top of Google's search results ensures clients find
+						your business first.
+					</figcaption>
+				</figure>
+			</section>
+			<section class="container px-4">
+				<p class="p-1 copyText text-justify">
+					In the digital age, your website acts as your storefront, business
+					card, and first impression—all rolled into one. But what good is a
+					stunning website if it's hidden away on the second page of Google
+					search results, where seldom a soul ventures? Enter the hero of our
+					story: Search Engine Optimization, or SEO.
+				</p>
+				<p class="p-1 copyText text-justify">
+					Just as building a website with a mobile-first and responsive design
+					is crucial for user experience and Google rankings, mastering the
+					basics of SEO is essential for getting your site seen by the right
+					people. This article is for small business owners looking to unravel
+					the mystery of SEO and give their websites a fighting chance in the
+					competitive arena of search engines. So, let's dive in!
+				</p>
+			</section>
+			<section class="container px-4">
+				<h2 class="sectionTitle fs-2 text-center mt-4">
+					Starting With SEO Basics
+				</h2>
+				<p class="p-1 copyText text-justify">
+					Before we talk strategy, let's get the basics down. SEO is the
+					practice of optimizing your website to increase its visibility when
+					people search for products or services related to your business in
+					Google, Bing, and other search engines. The higher your pages rank
+					in search results, the more likely you are to catch the attention of
+					prospective customers.
+				</p>
+				<p class="p-1 copyText text-justify">
+					Understanding how search engines work is key. They crawl your site,
+					indexing content to serve up as answers to users' queries. Your goal
+					is to make their job easy by clearly indicating what your content is
+					about and why it's valuable.
+				</p>
+			</section>
+			<section class="container px-4">
+				<h2 class="sectionTitle fs-2 text-center mt-4">
+					Structuring Your Site for Search Engines
+				</h2>
+				<p class="p-1 pb-0 copyText text-justify">
+					Think of your website's structure as the foundation of your SEO
+					strategy. Just as we build websites with mobile-first design, we
+					should also design with SEO in mind from the get-go. Here&#39;s how:
+				</p>
+				<ul class="copyText list-group list-group-flush text-break">
+					<li class="list-group-item bg-accent-c">
+						<b>Use Semantic HTML:</b> Proper use of HTML tags (like
+						<b>&lt;h1&gt;</b>, <b>&lt;h2&gt;</b>, and <b>&lt;p&gt;</b>) helps
+						search engines understand the structure and content of your pages.
+						Each page should have a clear hierarchy and use headings and
+						subheadings to break up text and make it digestible.
+					</li>
+					<li class="list-group-item bg-accent-c">
+						<b>Make Navigation Simple:</b> A well-organized site helps search
+						engines index your content while making it easier for visitors to
+						navigate. Use a straightforward menu structure, and link between
+						pages where relevant.
+					</li>
+					<li class="list-group-item bg-accent-c">
+						<b>Optimize Your URLs:</b> Keep URLs short, descriptive, and
+						keyword-rich. A URL like www.subtlewebstudios.com/article-seo is
+						infinitely more telling than www.subtlewebstudios.com/article123.
+					</li>
+				</ul>
+				<figure class="container p-3">
+					<img class="figure-img rounded mt-2" src="../assets/images/wide_code_a.webp" />
+					<figcaption class="figure-caption text-center copyText">
+						Proper structuring helps Google's bots crawl and index your site.
+					</figcaption>
+				</figure>
+			</section>
+			<section class="container px-4">
+				<h2 class="sectionTitle fs-2 text-center mt-4">
+					Keywords: Knowing What Your Audience is Searching For
+				</h2>
+				<p class="p-1 pb-0 copyText">
+					In the vast landscape of digital marketing, keywords act as the
+					compass that guides your potential customers to your online
+					doorstep. These critical phrases and terms, which users enter into
+					search engines, are not just indicators of what people are looking
+					for; they're insights into their needs, preferences, and behaviors.
+					By identifying and understanding these keywords, you're equipped to
+					refine your site's content, making it more relevant and visible to
+					those who are searching for the solutions you provide.
+				</p>
+				<div class="row justify-content-center align-items-center">
+					<ul class="col-md-7 copyText list-group list-group-flush text-break text-center p-1">
 						<li class="list-group-item bg-accent-c">
-							<b>Use Semantic HTML:</b> Proper use of HTML tags (like
-							<b>&lt;h1&gt;</b>, <b>&lt;h2&gt;</b>, and <b>&lt;p&gt;</b>) helps
-							search engines understand the structure and content of your pages.
-							Each page should have a clear hierarchy and use headings and
-							subheadings to break up text and make it digestible.
+							<b>Do Your Research:</b> Tools like Google Keyword Planner or
+							SEMrush can help you discover which keywords are most relevant
+							to your business.
 						</li>
 						<li class="list-group-item bg-accent-c">
-							<b>Make Navigation Simple:</b> A well-organized site helps search
-							engines index your content while making it easier for visitors to
-							navigate. Use a straightforward menu structure, and link between
-							pages where relevant.
+							<b>Be Natural:</b> Integrate keywords smoothly into your
+							content, titles, and meta descriptions. Keyword stuffing, or
+							overusing keywords, can penalize your ranking.
 						</li>
 						<li class="list-group-item bg-accent-c">
-							<b>Optimize Your URLs:</b> Keep URLs short, descriptive, and
-							keyword-rich. A URL like www.subtlewebstudios.com/article-seo is
-							infinitely more telling than www.subtlewebstudios.com/article123.
-						</li>
-					</ul>
-					<figure class="container p-3">
-						<img
-							class="figure-img rounded mt-2"
-							src="../assets/images/wide_code_a.webp"
-						/>
-						<figcaption class="figure-caption text-center copyText">
-							Proper structuring helps Google's bots crawl and index your site.
-						</figcaption>
-					</figure>
-				</section>
-				<section class="container px-4">
-					<h2 class="sectionTitle fs-2 text-center mt-4">
-						Keywords: Knowing What Your Audience is Searching For
-					</h2>
-					<p class="p-1 pb-0 copyText">
-						In the vast landscape of digital marketing, keywords act as the
-						compass that guides your potential customers to your online
-						doorstep. These critical phrases and terms, which users enter into
-						search engines, are not just indicators of what people are looking
-						for; they're insights into their needs, preferences, and behaviors.
-						By identifying and understanding these keywords, you're equipped to
-						refine your site's content, making it more relevant and visible to
-						those who are searching for the solutions you provide.
-					</p>
-					<div class="row justify-content-center align-items-center">
-						<ul
-							class="col-md-7 copyText list-group list-group-flush text-break text-center p-1"
-						>
-							<li class="list-group-item bg-accent-c">
-								<b>Do Your Research:</b> Tools like Google Keyword Planner or
-								SEMrush can help you discover which keywords are most relevant
-								to your business.
-							</li>
-							<li class="list-group-item bg-accent-c">
-								<b>Be Natural:</b> Integrate keywords smoothly into your
-								content, titles, and meta descriptions. Keyword stuffing, or
-								overusing keywords, can penalize your ranking.
-							</li>
-							<li class="list-group-item bg-accent-c">
-								<b>Regular Check-ins:</b> New trends and search terms pop up all
-								the time so monitor how your chosen keywords are doing and
-								update your strategy to keep your site fresh and visible.
-							</li>
-							<li class="list-group-item bg-accent-c">
-								<b>Localise Your Keywords:</b> Location-based keywords helps
-								attract customers in your area, making your business more
-								relevant and visible to those searching for local solutions.
-							</li>
-						</ul>
-						<figure class="d-none d-md-block col-md-4">
-							<img
-								class="figure-img rounded"
-								src="../assets/images/search_box_b.webp"
-							/>
-							<figcaption class="figure-caption text-center copyText">
-								Proper structuring helps Google's bots crawl and index your
-								site.
-							</figcaption>
-						</figure>
-					</div>
-				</section>
-				<section class="container px-4">
-					<h2 class="sectionTitle fs-2 text-center mt-4">Content is King</h2>
-					<p class="p-1 pb-0 copyText">
-						The adage "Content is King" has become a staple in the digital
-						marketing realm, and its continued relevance underscores a universal
-						truth: high-quality, pertinent content stands as a cornerstone in
-						enhancing Search Engine Optimization (SEO). For small business
-						owners navigating the vastness of digital marketing, understanding
-						the pivotal role of content is crucial. Content, rich in relevance
-						and quality, doesn't just engage your audience; it significantly
-						bolsters your SEO efforts, propelling your website's visibility in
-						search engine results.
-					</p>
-					<figure class="d-none d-md-block col-md-4 float-end m-2">
-						<img
-							class="figure-img rounded"
-							src="../assets/images/crown_on_pc.webp"
-							alt="content is king"
-						/>
-						<figcaption class="figure-caption copyText text-end">
-							Create content that people want!
-						</figcaption>
-					</figure>
-					<p class="p-1 pb-0 copyText">
-						To ensure your website remains a dynamic entity in the eyes of
-						search engines, it's imperative to infuse it with fresh, engaging
-						content regularly. Whether it's through insightful blog posts that
-						delve into industry trends, the introduction of new products that
-						meet your customers' evolving needs, or updates to your services
-						that reflect your business's growth, every addition serves as a
-						beacon, signaling to search engines that your website is a thriving
-						hub of information. This constant stream of updates not only keeps
-						your audience informed and engaged but also enhances your website's
-						ranking potential.
-					</p>
-					<p class="p-1 pb-0 copyText">
-						Equally important is the need to align your content with the
-						interests and inquiries of your audience. Tailoring your content to
-						address their specific questions and needs can dramatically improve
-						your website's search engine rankings. By leveraging formats such as
-						informative blog posts, comprehensive FAQs, and detailed service
-						pages, you provide value to your visitors, answering their questions
-						before they even ask. This strategy not only positions your website
-						as a valuable resource but also improves its relevance and
-						authority, key factors that search engines consider when determining
-						rankings. By focusing on creating content that resonates with your
-						audience and answers their questions, you lay the groundwork for a
-						website that not only ranks well but also genuinely connects with
-						those who visit it.
-					</p>
-				</section>
-				<section class="container px-4">
-					<h2 class="sectionTitle fs-2 text-center mt-4">
-						Mobile Responsiveness and Page Speed
-					</h2>
-					<p class="p-1 pb-0 copyText">
-						Just as our responsive design ensures your site looks good on any
-						device, it also affects your SEO. Google prioritizes mobile-friendly
-						sites, so incorporating mobile responsiveness and optimizing page
-						speed into your SEO strategy is essential for staying competitive in
-						today’s digital landscape.
-					</p>
-					<p class="p-1 pb-0 copyText">
-						By focusing on these areas, you not only meet the technical
-						requirements of search engines but also cater to the evolving needs
-						of your audience, setting your site up for both immediate and
-						long-term success.
-					</p>
-					<ul class="copyText list-group list-group-flush text-break">
-						<li class="list-group-item bg-accent-c">
-							<b>Test Your Site's Mobile Responsiveness:</b> Tools like Google's
-							Mobile-Friendly Test can show you how well your site performs on
-							mobile devices.
+							<b>Regular Check-ins:</b> New trends and search terms pop up all
+							the time so monitor how your chosen keywords are doing and
+							update your strategy to keep your site fresh and visible.
 						</li>
 						<li class="list-group-item bg-accent-c">
-							<b>Improve Page Speed:</b> Use Google PageSpeed Insights to
-							identify ways to make your site faster. Compressing images,
-							minimizing code, and leveraging browser caching can all improve
-							speed.
+							<b>Localise Your Keywords:</b> Location-based keywords helps
+							attract customers in your area, making your business more
+							relevant and visible to those searching for local solutions.
 						</li>
 					</ul>
-				</section>
-				<section class="container px-4">
-					<h2 class="sectionTitle fs-2 text-center mt-4">Wrapping Up</h2>
-					<p class="p-1 pb-0 copyText">
-						SEO might seem like a complex beast, but at its heart, it's about
-						making your site more accessible to both search engines and your
-						potential customers. By structuring your site with care, focusing on
-						quality content, and ensuring it's as speedy and responsive as it
-						can be, you're laying the groundwork for SEO success.
-					</p>
-					<p class="p-1 pb-0 copyText">
-						Dive into your website with these basics in mind, and watch as your
-						digital presence begins to grow. Remember, SEO is a marathon, not a
-						sprint. Continuous effort, updating content, and keeping abreast of
-						SEO best practices will keep your site visible and relevant.
-					</p>
-				</section>
-			</article>
-		</main>
-		<section
-			id="blog"
-			class="d-flex flex-column align-items-center justify-content-center mt-5"
-		>
-			<h2 class="sectionTitle fs-1 text-center">RECENT ARTICLES</h2>
-			<ul class="container">
-				<li class="card m-2 border-0 p-2">
-					<div class="row">
-						<div class="col-md-7 card-body order-md-2">
-							<img
-								src="../assets/images/hand_coded.webp"
-								alt="Hand-coded Websites"
-								class="img-fluid"
-							/>
-						</div>
-						<div class="col-md-5 card-body text-center order-md-1">
-							<h5 class="card-title">Hand-coded Websites or CMS?</h5>
-							<p class="card-text copyText text-start p-0">
-								Choosing the Right Type of Website To Grow Your Business and
-								Convert Your Visitors Into Customers.
-							</p>
-							<p class="card-text copyText update text-end">
-								Last Updated March 18, 2024
-							</p>
-							<a href="#" class="stretched-link"></a>
-						</div>
+					<figure class="d-none d-md-block col-md-4">
+						<img class="figure-img rounded" src="../assets/images/search_box_b.webp" />
+						<figcaption class="figure-caption text-center copyText">
+							Proper structuring helps Google's bots crawl and index your
+							site.
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+			<section class="container px-4">
+				<h2 class="sectionTitle fs-2 text-center mt-4">Content is King</h2>
+				<p class="p-1 pb-0 copyText">
+					The adage "Content is King" has become a staple in the digital
+					marketing realm, and its continued relevance underscores a universal
+					truth: high-quality, pertinent content stands as a cornerstone in
+					enhancing Search Engine Optimization (SEO). For small business
+					owners navigating the vastness of digital marketing, understanding
+					the pivotal role of content is crucial. Content, rich in relevance
+					and quality, doesn't just engage your audience; it significantly
+					bolsters your SEO efforts, propelling your website's visibility in
+					search engine results.
+				</p>
+				<figure class="d-none d-md-block col-md-4 float-end m-2">
+					<img class="figure-img rounded" src="../assets/images/crown_on_pc.webp" alt="content is king" />
+					<figcaption class="figure-caption copyText text-end">
+						Create content that people want!
+					</figcaption>
+				</figure>
+				<p class="p-1 pb-0 copyText">
+					To ensure your website remains a dynamic entity in the eyes of
+					search engines, it's imperative to infuse it with fresh, engaging
+					content regularly. Whether it's through insightful blog posts that
+					delve into industry trends, the introduction of new products that
+					meet your customers' evolving needs, or updates to your services
+					that reflect your business's growth, every addition serves as a
+					beacon, signaling to search engines that your website is a thriving
+					hub of information. This constant stream of updates not only keeps
+					your audience informed and engaged but also enhances your website's
+					ranking potential.
+				</p>
+				<p class="p-1 pb-0 copyText">
+					Equally important is the need to align your content with the
+					interests and inquiries of your audience. Tailoring your content to
+					address their specific questions and needs can dramatically improve
+					your website's search engine rankings. By leveraging formats such as
+					informative blog posts, comprehensive FAQs, and detailed service
+					pages, you provide value to your visitors, answering their questions
+					before they even ask. This strategy not only positions your website
+					as a valuable resource but also improves its relevance and
+					authority, key factors that search engines consider when determining
+					rankings. By focusing on creating content that resonates with your
+					audience and answers their questions, you lay the groundwork for a
+					website that not only ranks well but also genuinely connects with
+					those who visit it.
+				</p>
+			</section>
+			<section class="container px-4">
+				<h2 class="sectionTitle fs-2 text-center mt-4">
+					Mobile Responsiveness and Page Speed
+				</h2>
+				<p class="p-1 pb-0 copyText">
+					Just as our responsive design ensures your site looks good on any
+					device, it also affects your SEO. Google prioritizes mobile-friendly
+					sites, so incorporating mobile responsiveness and optimizing page
+					speed into your SEO strategy is essential for staying competitive in
+					today’s digital landscape.
+				</p>
+				<p class="p-1 pb-0 copyText">
+					By focusing on these areas, you not only meet the technical
+					requirements of search engines but also cater to the evolving needs
+					of your audience, setting your site up for both immediate and
+					long-term success.
+				</p>
+				<ul class="copyText list-group list-group-flush text-break">
+					<li class="list-group-item bg-accent-c">
+						<b>Test Your Site's Mobile Responsiveness:</b> Tools like Google's
+						Mobile-Friendly Test can show you how well your site performs on
+						mobile devices.
+					</li>
+					<li class="list-group-item bg-accent-c">
+						<b>Improve Page Speed:</b> Use Google PageSpeed Insights to
+						identify ways to make your site faster. Compressing images,
+						minimizing code, and leveraging browser caching can all improve
+						speed.
+					</li>
+				</ul>
+			</section>
+			<section class="container px-4">
+				<h2 class="sectionTitle fs-2 text-center mt-4">Wrapping Up</h2>
+				<p class="p-1 pb-0 copyText">
+					SEO might seem like a complex beast, but at its heart, it's about
+					making your site more accessible to both search engines and your
+					potential customers. By structuring your site with care, focusing on
+					quality content, and ensuring it's as speedy and responsive as it
+					can be, you're laying the groundwork for SEO success.
+				</p>
+				<p class="p-1 pb-0 copyText">
+					Dive into your website with these basics in mind, and watch as your
+					digital presence begins to grow. Remember, SEO is a marathon, not a
+					sprint. Continuous effort, updating content, and keeping abreast of
+					SEO best practices will keep your site visible and relevant.
+				</p>
+			</section>
+		</article>
+	</main>
+	<section id="blog" class="d-flex flex-column align-items-center justify-content-center mt-5">
+		<h2 class="sectionTitle fs-1 text-center">RECENT ARTICLES</h2>
+		<ul class="container">
+			<li class="card m-2 border-0 p-2">
+				<div class="row">
+					<div class="col-md-7 card-body order-md-2">
+						<img src="../assets/images/hand_coded.webp" alt="Hand-coded Websites" class="img-fluid" />
 					</div>
-				</li>
-				<li class="card m-2 border-0 p-2">
-					<div class="row">
-						<div class="col-md-7 card-body">
-							<img
-								src="../assets/images/responsive_c.webp"
-								alt="Search Engine Optimization"
-								class="img-fluid"
-							/>
-						</div>
-						<div class="col-md-5 card-body text-center">
-							<h5 class="card-title">Why Responsive Websites Are Vital</h5>
-							<p class="card-text copyText text-start p-0">
-								Learn how having a responsive website improves the user
-								experience and drives client retention.
-							</p>
-							<p class="card-text copyText update text-end">
-								Last Updated March 20, 2024
-							</p>
-							<a href="./article-responsive.html" class="stretched-link"></a>
-						</div>
+					<div class="col-md-5 card-body text-center order-md-1">
+						<h5 class="card-title">Hand-coded Websites or CMS?</h5>
+						<p class="card-text copyText text-start p-0">
+							Choosing the Right Type of Website To Grow Your Business and
+							Convert Your Visitors Into Customers.
+						</p>
+						<p class="card-text copyText update text-end">
+							Last Updated March 18, 2024
+						</p>
+						<a href="#" class="stretched-link"></a>
 					</div>
-				</li>
-			</ul>
-		</section>
-		<section
-			id="archive"
-			class="d-flex flex-column align-items-center justify-content-center"
-		>
-			<h2 class="sectionTitle fs-1 text-center">ARCHIVE</h2>
-			<ul class="container row">
-				<li class="card card-body align-items-center text-center col-md-3 m-2">
-					<img
-						src="../assets/images/animation_a.webp"
-						alt="Animations"
-						class="img-fluid"
-					/>
-					<h5 class="card-title">The Role of Animation in Modern Web Design</h5>
-					<p class="card-text copyText">
-						Explore how subtle animations can enhance the user experience,
-						engage visitors, and convey information more effectively.
-					</p>
-					<a href="#" class="stretched-link"></a>
-				</li>
-				<li class="card card-body align-items-center text-center col-md-3 m-2">
-					<img
-						src="../assets/images/user_centric.webp"
-						alt="blog pic 3"
-						class="card-img-top mb-2"
-					/>
-					<h5 class="card-title">Crafting User-Centric Web Experiences</h5>
-					<p class="card-text copyText">
-						Learn the importance of focusing on the user experience in web
-						design and how it can lead to higher engagement and conversion
-						rates.
-					</p>
-					<a href="#" class="stretched-link"></a>
-				</li>
-				<li class="card card-body align-items-center text-center col-md-3 m-2">
-					<img
-						src="../assets/images/accessibility.webp"
-						alt="blog pic 3"
-						class="card-img-top mb-2"
-					/>
-					<h5 class="card-title">Why Accessibility Matters in Web Design</h5>
-					<p class="card-text copyText">
-						Learn about the significance of making your website accessible to
-						all users, including those with disabilities, and how it can broaden
-						your audience and improve your SEO.
-					</p>
-					<a href="#" class="stretched-link"></a>
-				</li>
-				<li class="card card-body align-items-center text-center col-md-3 m-2">
-					<img
-						src="../assets/images/speeding_cars.webp"
-						alt="blog pic 3"
-						class="card-img-top mb-2"
-					/>
-					<h5 class="card-title">The Importance of Website Speed in 2024</h5>
-					<p class="card-text copyText">
-						Understand how site speed impacts user experience, retention, and
-						SEO, plus tips on how to improve it.
-					</p>
-					<a href="#" class="stretched-link"></a>
-				</li>
-				<li class="card card-body align-items-center text-center col-md-3 m-2">
-					<img
-						src="../assets/images/css_grid.webp"
-						alt="blog pic 3"
-						class="card-img-top mb-2"
-					/>
-					<h5 class="card-title">Unlocking the Potential of CSS Grids</h5>
-					<p class="card-text copyText">
-						Discover how CSS Grids can transform your website layouts into more
-						flexible, responsive, and creative designs.
-					</p>
-					<a href="#" class="stretched-link"></a>
-				</li>
-				<li class="card card-body align-items-center text-center col-md-3 m-2">
-					<img
-						src="../assets/images/data_analytics.webp"
-						alt="blog pic 3"
-						class="card-img-top mb-2"
-					/>
-					<h5 class="card-title">
-						Optimizing Images for Faster Web Performance
-					</h5>
-					<p class="card-text copyText">
-						Learn best practices for image optimization to speed up your website
-						without sacrificing quality.
-					</p>
-					<a href="#" class="stretched-link"></a>
-				</li>
-				<li class="card card-body align-items-center text-center col-md-3 m-2">
-					<img
-						src="../assets/images/bubble_analytics.webp"
-						alt="blog pic 3"
-						class="card-img-top mb-2"
-					/>
-					<h5 class="card-title">
-						Leveraging Web Analytics for Better Decisions
-					</h5>
-					<p class="card-text copyText">
-						An introduction to web analytics tools and how to use them to gather
-						insights, measure performance, and improve your website strategy.
-					</p>
-					<a href="#" class="stretched-link"></a>
-				</li>
-				<!-- SPACER TO KEEP GRID ALIGNED -->
-				<div class="col-md-8"></div>
-			</ul>
-		</section>
-		<footer id="footer" class="footer text-center mb-5">
-			<p>Hand-Crafted by Subtle Web Studios 2024 &#169;</p>
-		</footer>
-		<a href="#top" id="scrollUpButton" class="btn boxShadow">
-			<i class="fas fa-arrow-up"></i>
-		</a>
-		<!-- JS Files -->
-		<script
-			src="../assets/js/bootstrap.min.js"
-			crossorigin="anonymous"
-			defer
-			async
-		></script>
-		<script src="../assets/js/navbar.js" crossorigin="anonymous" defer></script>
-		<script
-			src="../assets/js/animations.js"
-			crossorigin="anonymous"
-			defer
-		></script>
-		<script
-			src="../assets/js/darkMode.js"
-			crossorigin="anonymous"
-			defer
-		></script>
-	</body>
+				</div>
+			</li>
+			<li class="card m-2 border-0 p-2">
+				<div class="row">
+					<div class="col-md-7 card-body">
+						<img src="../assets/images/responsive_c.webp" alt="Search Engine Optimization"
+							class="img-fluid" />
+					</div>
+					<div class="col-md-5 card-body text-center">
+						<h5 class="card-title">Why Responsive Websites Are Vital</h5>
+						<p class="card-text copyText text-start p-0">
+							Learn how having a responsive website improves the user
+							experience and drives client retention.
+						</p>
+						<p class="card-text copyText update text-end">
+							Last Updated March 20, 2024
+						</p>
+						<a href="./article-responsive.html" class="stretched-link"></a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<section id="archive" class="d-flex flex-column align-items-center justify-content-center">
+		<h2 class="sectionTitle fs-1 text-center">ARCHIVE</h2>
+		<ul class="container row">
+			<li class="card card-body align-items-center text-center col-md-3 m-2">
+				<img src="../assets/images/animation_a.webp" alt="Animations" class="img-fluid" />
+				<h5 class="card-title">The Role of Animation in Modern Web Design</h5>
+				<p class="card-text copyText">
+					Explore how subtle animations can enhance the user experience,
+					engage visitors, and convey information more effectively.
+				</p>
+				<a href="#" class="stretched-link"></a>
+			</li>
+			<li class="card card-body align-items-center text-center col-md-3 m-2">
+				<img src="../assets/images/user_centric.webp" alt="blog pic 3" class="card-img-top mb-2" />
+				<h5 class="card-title">Crafting User-Centric Web Experiences</h5>
+				<p class="card-text copyText">
+					Learn the importance of focusing on the user experience in web
+					design and how it can lead to higher engagement and conversion
+					rates.
+				</p>
+				<a href="#" class="stretched-link"></a>
+			</li>
+			<li class="card card-body align-items-center text-center col-md-3 m-2">
+				<img src="../assets/images/accessibility.webp" alt="blog pic 3" class="card-img-top mb-2" />
+				<h5 class="card-title">Why Accessibility Matters in Web Design</h5>
+				<p class="card-text copyText">
+					Learn about the significance of making your website accessible to
+					all users, including those with disabilities, and how it can broaden
+					your audience and improve your SEO.
+				</p>
+				<a href="#" class="stretched-link"></a>
+			</li>
+			<li class="card card-body align-items-center text-center col-md-3 m-2">
+				<img src="../assets/images/speeding_cars.webp" alt="blog pic 3" class="card-img-top mb-2" />
+				<h5 class="card-title">The Importance of Website Speed in 2024</h5>
+				<p class="card-text copyText">
+					Understand how site speed impacts user experience, retention, and
+					SEO, plus tips on how to improve it.
+				</p>
+				<a href="#" class="stretched-link"></a>
+			</li>
+			<li class="card card-body align-items-center text-center col-md-3 m-2">
+				<img src="../assets/images/css_grid.webp" alt="blog pic 3" class="card-img-top mb-2" />
+				<h5 class="card-title">Unlocking the Potential of CSS Grids</h5>
+				<p class="card-text copyText">
+					Discover how CSS Grids can transform your website layouts into more
+					flexible, responsive, and creative designs.
+				</p>
+				<a href="#" class="stretched-link"></a>
+			</li>
+			<li class="card card-body align-items-center text-center col-md-3 m-2">
+				<img src="../assets/images/data_analytics.webp" alt="blog pic 3" class="card-img-top mb-2" />
+				<h5 class="card-title">
+					Optimizing Images for Faster Web Performance
+				</h5>
+				<p class="card-text copyText">
+					Learn best practices for image optimization to speed up your website
+					without sacrificing quality.
+				</p>
+				<a href="#" class="stretched-link"></a>
+			</li>
+			<li class="card card-body align-items-center text-center col-md-3 m-2">
+				<img src="../assets/images/bubble_analytics.webp" alt="blog pic 3" class="card-img-top mb-2" />
+				<h5 class="card-title">
+					Leveraging Web Analytics for Better Decisions
+				</h5>
+				<p class="card-text copyText">
+					An introduction to web analytics tools and how to use them to gather
+					insights, measure performance, and improve your website strategy.
+				</p>
+				<a href="#" class="stretched-link"></a>
+			</li>
+			<!-- SPACER TO KEEP GRID ALIGNED -->
+			<div class="col-md-8"></div>
+		</ul>
+	</section>
+	<footer id="footer" class="footer text-center mb-5">
+		<p>Hand-Crafted by Subtle Web Studios 2024 &#169;</p>
+	</footer>
+	<a href="#top" id="scrollUpButton" class="btn boxShadow">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+	<!-- JS Files -->
+	<script src="../assets/js/bootstrap.min.js" crossorigin="anonymous" defer async></script>
+	<script src="../assets/js/navbar.js" crossorigin="anonymous" defer></script>
+	<script src="../assets/js/animations.js" crossorigin="anonymous" defer></script>
+	<script src="../assets/js/darkMode.js" crossorigin="anonymous" defer></script>
+</body>
+
 </html>

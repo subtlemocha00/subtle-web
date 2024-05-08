@@ -133,7 +133,7 @@
 						prioritizing the essential elements of your site, making it faster
 						and more user-friendly for mobile users.
 					</p>
-					<pre class="col-12"><code class="language-js">@media only screen and (min-width: 1023px) {
+					<pre class="col-12"><code class="language-css">@media only screen and (min-width: 1023px) {
 body {
       background-color: lightblue;
      }
@@ -156,8 +156,7 @@ body {
 						size relative to the screen size.
 					</p>
 
-					<p class="p-1 pb-0 copyText text-justify"></p>
-					<pre class="col-12"><code class="language-js">.container {
+					<pre class="col-12"><code class="language-css">.container {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -180,25 +179,25 @@ body {
 						on any device.
 					</p>
 				</section>
-				<section class="container px-0">
+				<section class="container d-flex flex-column align-items-center px-1 px-md-4">
 					<h2 class="sectionTitle fs-2 text-center mt-4">Flexible Images</h2>
-					<div class="container row justify-content-center align-items-center">
-						<div class="d-none d-md-block col-md-5">
+					<div class="container row p-0 m-0 justify-content-between align-items-center">
+						<div class="col-md-5 p-0">
 							<p class="p-1 pb-0 copyText text-justify">
 								Ensure that images on your site are flexible and can resize
 								within their containers to avoid distortion or overflow on
 								smaller screens.
 							</p>
 						</div>
-						<div class="col-md-7 copyText list-group list-group-flush text-break text-center p-1">
-							<pre class="col-12"><code class="language-js">img {
-								max-width: 100%;
-								height: auto;
-							}</code></pre>
+						<div class="col-md-7 p-0">
+							<pre class="col-12"><code class="language-css p-1">img {
+	max-width: 100%;
+	height: auto;
+}</code></pre>
 						</div>
 					</div>
 				</section>
-				<section class="container px-4">
+				<section class="container d-flex flex-column align-items-center px-1 px-md-4">
 					<h2 class="sectionTitle fs-2 text-center mt-4">
 						Media Queries: The Heart of Responsiveness
 					</h2>
@@ -213,31 +212,24 @@ body {
 						Media queries allow you to apply different styles for different
 						screen sizes, making your website adaptable and responsive.
 					</p>
-					<div class="container row row-cols-2">
-						<pre class="col"><code class="language-js">body {
-font-family: Arial, sans-serif;
+					<div class="container">
+						<pre class="col-12"><code class="language-css p-1">body {
+	font-family: Arial, sans-serif;
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-body {
-font-size: 18px;
-}
+	body {
+		font-size: 18px;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-body {
-font-size: 20px;
-}
+	body {
+		font-size: 20px;
+	}
 }
 </code></pre>
-						<figure class="d-none d-md-block col">
-							<img class="figure-img rounded" src="../assets/images/yarn heart.webp"
-								alt="content is king" />
-							<figcaption class="figure-caption copyText text-center">
-								Create content that people want!
-							</figcaption>
-						</figure>
 					</div>
 					<p class="p-1 pb-0 copyText text-justify">
 						To ensure your website remains a dynamic entity in the eyes of

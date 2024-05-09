@@ -51,7 +51,7 @@ body.darkMode {
 }
 .list-group-item.darkMode {
 	background-color: var(--color-b-dark);
-	color: var(--color-c-dark);
+	color: var(--color-d-dark);
 }
 .list-group.darkMode {
 	background-color: var(--color-b-dark);
